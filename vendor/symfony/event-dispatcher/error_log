@@ -1,0 +1,12 @@
+[22-Jul-2022 23:24:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\EventDispatcher\EventDispatcherInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/event-dispatcher/EventDispatcherInterface.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/event-dispatcher/EventDispatcherInterface.php on line 23
+[23-Jul-2022 11:33:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Contracts\EventDispatcher\Event" not found in /home/blat6618/public_html/percobaann/vendor/symfony/event-dispatcher/GenericEvent.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/event-dispatcher/GenericEvent.php on line 26
+[23-Jul-2022 21:51:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\EventDispatcher\EventDispatcherInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/event-dispatcher/EventDispatcher.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/event-dispatcher/EventDispatcher.php on line 32

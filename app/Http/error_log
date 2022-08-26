@@ -1,0 +1,12 @@
+[14-Jul-2022 16:39:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Kernel" not found in /home/blat6618/public_html/percobaann/app/Http/Kernel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Kernel.php on line 7
+[13-Aug-2022 08:08:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Kernel" not found in /home/blat6618/public_html/percobaann/app/Http/Kernel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Kernel.php on line 7
+[26-Aug-2022 01:05:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Kernel" not found in /home/blat6618/public_html/percobaann/app/Http/Kernel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Kernel.php on line 7

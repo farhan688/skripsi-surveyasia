@@ -1,0 +1,36 @@
+[18-Jul-2022 10:34:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Barryvdh\Debugbar\Facades\Debugbar" not found in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/Facade.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/Facade.php on line 28
+[19-Jul-2022 22:10:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Barryvdh\Debugbar\ServiceProvider" not found in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/LumenServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/LumenServiceProvider.php on line 7
+[20-Jul-2022 03:18:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/ServiceProvider.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/ServiceProvider.php on line 17
+[20-Jul-2022 07:51:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "DebugBar\HttpDriverInterface" not found in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/SymfonyHttpDriver.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/SymfonyHttpDriver.php on line 12
+[20-Jul-2022 12:24:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "DebugBar\DebugBar" not found in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/LaravelDebugbar.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/LaravelDebugbar.php on line 57
+[21-Jul-2022 02:30:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function app() in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/debugbar-routes.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/debugbar-routes.php on line 5
+[21-Jul-2022 07:09:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\View\Engine" not found in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/DebugbarViewEngine.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/DebugbarViewEngine.php on line 9
+[21-Jul-2022 07:09:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "DebugBar\JavascriptRenderer" not found in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/JavascriptRenderer.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/JavascriptRenderer.php on line 12
+[22-Jul-2022 05:38:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Barryvdh\Debugbar\Facades\Debugbar" not found in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/Facade.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/barryvdh/laravel-debugbar/src/Facade.php on line 28

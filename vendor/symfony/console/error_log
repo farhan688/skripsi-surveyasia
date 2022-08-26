@@ -1,0 +1,12 @@
+[20-Jul-2022 09:30:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/blat6618/public_html/percobaann/vendor/symfony/console/SingleCommandApplication.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/console/SingleCommandApplication.php on line 21
+[20-Jul-2022 12:16:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Service\ResetInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/console/Application.php:71
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/console/Application.php on line 71
+[24-Jul-2022 03:13:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Console\Command\Command" not found in /home/blat6618/public_html/percobaann/vendor/symfony/console/SingleCommandApplication.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/console/SingleCommandApplication.php on line 21

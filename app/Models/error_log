@@ -1,0 +1,160 @@
+[12-Jul-2022 14:42:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/UsersSurvey.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/UsersSurvey.php on line 8
+[12-Jul-2022 21:30:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/News.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/News.php on line 8
+[12-Jul-2022 23:22:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Auth\User" not found in /home/blat6618/public_html/percobaann/app/Models/User.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/User.php on line 22
+[13-Jul-2022 02:09:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/QuestionBankTemplate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/QuestionBankTemplate.php on line 8
+[13-Jul-2022 03:56:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/UsersProfile.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/UsersProfile.php on line 9
+[13-Jul-2022 15:17:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Subscription.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Subscription.php on line 9
+[13-Jul-2022 21:37:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/QuestionBankSubTemplate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/QuestionBankSubTemplate.php on line 8
+[13-Jul-2022 22:31:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/CategorySubcriptions.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/CategorySubcriptions.php on line 8
+[14-Jul-2022 02:56:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Question.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Question.php on line 8
+[14-Jul-2022 02:56:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/QuestionChartConfiguration.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/QuestionChartConfiguration.php on line 8
+[14-Jul-2022 17:36:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/SurveyCategory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/SurveyCategory.php on line 8
+[14-Jul-2022 21:13:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Survey.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Survey.php on line 11
+[14-Jul-2022 22:12:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Transaction.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Transaction.php on line 12
+[15-Jul-2022 00:18:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Chart.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Chart.php on line 8
+[15-Jul-2022 03:31:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Pivot" not found in /home/blat6618/public_html/percobaann/app/Models/UsersSubscriptions.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/UsersSubscriptions.php on line 8
+[15-Jul-2022 08:33:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Permission.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Permission.php on line 9
+[15-Jul-2022 12:29:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Role.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Role.php on line 9
+[15-Jul-2022 20:21:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Answer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Answer.php on line 9
+[15-Jul-2022 21:22:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/QuestionsOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/QuestionsOption.php on line 8
+[16-Jul-2022 04:52:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/SocialAccount.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/SocialAccount.php on line 8
+[29-Jul-2022 10:25:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Answer.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Answer.php on line 9
+[29-Jul-2022 10:26:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Chart.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Chart.php on line 8
+[29-Jul-2022 13:05:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/News.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/News.php on line 8
+[29-Jul-2022 13:05:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Permission.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Permission.php on line 9
+[29-Jul-2022 13:05:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Question.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Question.php on line 8
+[29-Jul-2022 13:05:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Role.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Role.php on line 9
+[29-Jul-2022 13:06:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/SocialAccount.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/SocialAccount.php on line 8
+[29-Jul-2022 13:06:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Subscription.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Subscription.php on line 9
+[29-Jul-2022 13:06:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Survey.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Survey.php on line 11
+[29-Jul-2022 13:06:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/SurveyCategory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/SurveyCategory.php on line 8
+[29-Jul-2022 13:06:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/Transaction.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/Transaction.php on line 12
+[29-Jul-2022 13:07:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Auth\User" not found in /home/blat6618/public_html/percobaann/app/Models/User.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/User.php on line 22
+[29-Jul-2022 13:08:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/UsersProfile.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/UsersProfile.php on line 9
+[29-Jul-2022 13:09:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/UsersSurvey.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/UsersSurvey.php on line 8
+[29-Jul-2022 13:24:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/CategorySubcriptions.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/CategorySubcriptions.php on line 8
+[29-Jul-2022 13:24:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/QuestionsOption.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/QuestionsOption.php on line 8
+[29-Jul-2022 13:24:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\Pivot" not found in /home/blat6618/public_html/percobaann/app/Models/UsersSubscriptions.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/UsersSubscriptions.php on line 8
+[29-Jul-2022 13:25:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/QuestionBankSubTemplate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/QuestionBankSubTemplate.php on line 8
+[29-Jul-2022 13:25:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/QuestionBankTemplate.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/QuestionBankTemplate.php on line 8
+[29-Jul-2022 13:25:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Model" not found in /home/blat6618/public_html/percobaann/app/Models/QuestionChartConfiguration.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Models/QuestionChartConfiguration.php on line 8

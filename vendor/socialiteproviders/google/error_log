@@ -1,0 +1,4 @@
+[19-Jul-2022 04:10:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "SocialiteProviders\Manager\OAuth2\AbstractProvider" not found in /home/blat6618/public_html/percobaann/vendor/socialiteproviders/google/Provider.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/socialiteproviders/google/Provider.php on line 9

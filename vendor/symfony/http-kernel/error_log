@@ -1,0 +1,20 @@
+[23-Jul-2022 18:27:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-kernel/HttpClientKernel.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-kernel/HttpClientKernel.php on line 32
+[24-Jul-2022 02:17:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-kernel/HttpKernel.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-kernel/HttpKernel.php on line 51
+[29-Jul-2022 10:08:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\KernelInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-kernel/Kernel.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-kernel/Kernel.php on line 58
+[13-Aug-2022 20:46:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\BrowserKit\AbstractBrowser" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-kernel/HttpKernelBrowser.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-kernel/HttpKernelBrowser.php on line 31
+[17-Aug-2022 01:49:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpKernel\HttpKernelInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-kernel/KernelInterface.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-kernel/KernelInterface.php on line 29

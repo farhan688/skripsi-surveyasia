@@ -1,0 +1,18 @@
+[20-Jul-2022 18:34:22 Asia/Jakarta] PHP Warning:  include(/home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/testOperations.php on line 6
+[20-Jul-2022 18:34:22 Asia/Jakarta] PHP Warning:  include(): Failed opening '/home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/../vendor/autoload.php' for inclusion (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/testOperations.php on line 6
+[20-Jul-2022 18:34:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Complex\Complex" not found in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/testOperations.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/testOperations.php on line 9
+[20-Jul-2022 22:54:34 Asia/Jakarta] PHP Warning:  include(/home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/testFunctions.php on line 5
+[20-Jul-2022 22:54:34 Asia/Jakarta] PHP Warning:  include(): Failed opening '/home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/../vendor/autoload.php' for inclusion (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/testFunctions.php on line 5
+[20-Jul-2022 22:54:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Complex\Complex" not found in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/testFunctions.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/testFunctions.php on line 43
+[21-Jul-2022 00:34:09 Asia/Jakarta] PHP Warning:  include(/home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/complexTest.php on line 5
+[21-Jul-2022 00:34:09 Asia/Jakarta] PHP Warning:  include(): Failed opening '/home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/../vendor/autoload.php' for inclusion (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/complexTest.php on line 5
+[21-Jul-2022 00:34:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Complex\Complex" not found in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/complexTest.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/markbaker/complex/examples/complexTest.php on line 9

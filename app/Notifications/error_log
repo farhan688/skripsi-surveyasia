@@ -1,0 +1,40 @@
+[30-Jun-2022 02:47:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Notifications\VerifyEmail" not found in /home/blat6618/public_html/percobaann/app/Notifications/EmailVerificationNotification.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/EmailVerificationNotification.php on line 15
+[30-Jun-2022 14:00:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Notifications\Notification" not found in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php on line 9
+[30-Jun-2022 14:04:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Notifications\Notification" not found in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php on line 9
+[30-Jun-2022 14:13:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Notifications\VerifyEmail" not found in /home/blat6618/public_html/percobaann/app/Notifications/EmailVerificationNotification.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/EmailVerificationNotification.php on line 15
+[30-Jun-2022 14:34:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Notifications\VerifyEmail" not found in /home/blat6618/public_html/percobaann/app/Notifications/EmailVerificationNotification.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/EmailVerificationNotification.php on line 15
+[01-Jul-2022 04:05:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Notifications\Notification" not found in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php on line 9
+[01-Jul-2022 04:09:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Notifications\Notification" not found in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php on line 9
+[17-Jul-2022 01:43:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Notifications\VerifyEmail" not found in /home/blat6618/public_html/percobaann/app/Notifications/EmailVerificationNotification.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/EmailVerificationNotification.php on line 15
+[18-Jul-2022 12:24:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Notifications\Notification" not found in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php on line 9
+[22-Jul-2022 07:22:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Notifications\Notification" not found in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/Custom.php on line 9

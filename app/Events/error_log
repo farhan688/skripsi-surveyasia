@@ -1,0 +1,2 @@
+[29-Jun-2022 07:17:55 Asia/Jakarta] PHP Fatal error:  Trait "Illuminate\Foundation\Events\Dispatchable" not found in /home/blat6618/public_html/percobaann/app/Events/SurveyStart.php on line 13
+[13-Jul-2022 13:25:56 Asia/Jakarta] PHP Fatal error:  Trait "Illuminate\Foundation\Events\Dispatchable" not found in /home/blat6618/public_html/percobaann/app/Events/SurveyStart.php on line 13

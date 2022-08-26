@@ -1,0 +1,12 @@
+[29-Jun-2022 07:06:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Console\Kernel" not found in /home/blat6618/public_html/percobaann/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Console/Kernel.php on line 8
+[29-Jun-2022 07:09:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Console\Kernel" not found in /home/blat6618/public_html/percobaann/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Console/Kernel.php on line 8
+[15-Jul-2022 22:38:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Console\Kernel" not found in /home/blat6618/public_html/percobaann/app/Console/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Console/Kernel.php on line 8

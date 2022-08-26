@@ -1,0 +1,4 @@
+[23-Jul-2022 21:00:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Psr\EventDispatcher\StoppableEventInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/event-dispatcher-contracts/Event.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/event-dispatcher-contracts/Event.php on line 31

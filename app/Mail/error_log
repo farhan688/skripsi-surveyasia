@@ -1,0 +1,24 @@
+[14-Jul-2022 22:03:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Mail\Mailable" not found in /home/blat6618/public_html/percobaann/app/Mail/TransactionSuccess.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Mail/TransactionSuccess.php on line 10
+[14-Jul-2022 22:12:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Mail\Mailable" not found in /home/blat6618/public_html/percobaann/app/Mail/WelcomeNewUserMail.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Mail/WelcomeNewUserMail.php on line 10
+[17-Jul-2022 09:26:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Mail\Mailable" not found in /home/blat6618/public_html/percobaann/app/Mail/TransactionSuccess.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Mail/TransactionSuccess.php on line 10
+[17-Jul-2022 14:08:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Mail\Mailable" not found in /home/blat6618/public_html/percobaann/app/Mail/WelcomeNewUserMail.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Mail/WelcomeNewUserMail.php on line 10
+[21-Jul-2022 04:18:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Mail\Mailable" not found in /home/blat6618/public_html/percobaann/app/Mail/TransactionSuccess.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Mail/TransactionSuccess.php on line 10
+[21-Jul-2022 08:54:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Mail\Mailable" not found in /home/blat6618/public_html/percobaann/app/Mail/WelcomeNewUserMail.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Mail/WelcomeNewUserMail.php on line 10

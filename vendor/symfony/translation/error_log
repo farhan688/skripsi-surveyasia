@@ -1,0 +1,12 @@
+[23-Jul-2022 04:36:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Translation\MessageCatalogueInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/translation/MessageCatalogue.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/translation/MessageCatalogue.php on line 20
+[23-Jul-2022 10:43:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatorInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/translation/IdentityTranslator.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/translation/IdentityTranslator.php on line 23
+[04-Aug-2022 22:25:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Contracts\Translation\TranslatorInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/translation/DataCollectorTranslator.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/translation/DataCollectorTranslator.php on line 22

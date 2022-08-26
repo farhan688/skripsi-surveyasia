@@ -1,0 +1,9 @@
+[20-Jul-2022 21:06:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Relations\HasManyThrough" not found in /home/blat6618/public_html/percobaann/vendor/staudenmeir/eloquent-has-many-deep/src/HasManyDeep.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/staudenmeir/eloquent-has-many-deep/src/HasManyDeep.php on line 18
+[21-Jul-2022 13:45:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Staudenmeir\EloquentHasManyDeep\HasManyDeep" not found in /home/blat6618/public_html/percobaann/vendor/staudenmeir/eloquent-has-many-deep/src/HasOneDeep.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/staudenmeir/eloquent-has-many-deep/src/HasOneDeep.php on line 9
+[21-Jul-2022 23:58:46 Asia/Jakarta] PHP Fatal error:  Trait "Staudenmeir\EloquentHasManyDeep\ConcatenatesRelationships" not found in /home/blat6618/public_html/percobaann/vendor/staudenmeir/eloquent-has-many-deep/src/HasRelationships.php on line 10

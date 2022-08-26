@@ -1,0 +1,316 @@
+[21-Jun-2022 04:09:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankSubTemplateSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankSubTemplateSeeder.php on line 9
+[21-Jun-2022 15:21:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankTemplatesSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankTemplatesSeeder.php on line 9
+[21-Jun-2022 20:31:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/CategorySubcriptionsSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/CategorySubcriptionsSeeder.php on line 10
+[23-Jun-2022 14:23:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/UsersSubscriptionsSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/UsersSubscriptionsSeeder.php on line 10
+[12-Jul-2022 17:39:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionOptionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionOptionSeeder.php on line 8
+[12-Jul-2022 20:34:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SocialAccountSeeder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SocialAccountSeeder.php on line 7
+[12-Jul-2022 23:22:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/AnswerSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/AnswerSeeder.php on line 9
+[13-Jul-2022 02:09:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankSubTemplateSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankSubTemplateSeeder.php on line 9
+[13-Jul-2022 03:56:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/PriceSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/PriceSeeder.php on line 8
+[13-Jul-2022 05:46:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/PermissionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/PermissionSeeder.php on line 8
+[13-Jul-2022 12:24:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/UserSeeder.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/UserSeeder.php on line 14
+[13-Jul-2022 15:18:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/DatabaseSeeder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/DatabaseSeeder.php on line 7
+[13-Jul-2022 18:56:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/RolePermissionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/RolePermissionSeeder.php on line 8
+[14-Jul-2022 04:49:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/CategoryPriceSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/CategoryPriceSeeder.php on line 8
+[14-Jul-2022 07:31:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SurveyCaseSeeder.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SurveyCaseSeeder.php on line 12
+[14-Jul-2022 08:26:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SurveySeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SurveySeeder.php on line 8
+[14-Jul-2022 09:22:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SubscriptionSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SubscriptionSeeder.php on line 10
+[14-Jul-2022 12:05:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/UsersProfileSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/UsersProfileSeeder.php on line 9
+[14-Jul-2022 19:25:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/RoleSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/RoleSeeder.php on line 9
+[14-Jul-2022 19:26:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/TypePriceSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/TypePriceSeeder.php on line 9
+[14-Jul-2022 21:13:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/CategorySubcriptionsSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/CategorySubcriptionsSeeder.php on line 10
+[14-Jul-2022 22:13:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankTemplatesSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankTemplatesSeeder.php on line 9
+[15-Jul-2022 00:19:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/TransactionSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/TransactionSeeder.php on line 9
+[15-Jul-2022 04:28:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/UsersSubscriptionsSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/UsersSubscriptionsSeeder.php on line 10
+[15-Jul-2022 14:29:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionSeeder.php on line 10
+[15-Jul-2022 16:18:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/ChartSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/ChartSeeder.php on line 10
+[15-Jul-2022 17:14:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/NewsSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/NewsSeeder.php on line 9
+[15-Jul-2022 18:34:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SurveyCategorySeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SurveyCategorySeeder.php on line 8
+[18-Jul-2022 14:14:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/CategoryPriceSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/CategoryPriceSeeder.php on line 8
+[18-Jul-2022 14:23:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/PermissionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/PermissionSeeder.php on line 8
+[18-Jul-2022 14:26:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionOptionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionOptionSeeder.php on line 8
+[19-Jul-2022 02:57:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/RolePermissionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/RolePermissionSeeder.php on line 8
+[25-Jul-2022 08:25:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/AnswerSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/AnswerSeeder.php on line 9
+[25-Jul-2022 08:29:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/CategoryPriceSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/CategoryPriceSeeder.php on line 8
+[25-Jul-2022 08:36:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/CategorySubcriptionsSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/CategorySubcriptionsSeeder.php on line 10
+[25-Jul-2022 08:49:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/ChartSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/ChartSeeder.php on line 10
+[25-Jul-2022 09:17:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/DatabaseSeeder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/DatabaseSeeder.php on line 7
+[25-Jul-2022 10:11:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/NewsSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/NewsSeeder.php on line 9
+[25-Jul-2022 10:32:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/PermissionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/PermissionSeeder.php on line 8
+[25-Jul-2022 10:33:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/PriceSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/PriceSeeder.php on line 8
+[25-Jul-2022 10:34:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankSubTemplateSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankSubTemplateSeeder.php on line 9
+[25-Jul-2022 10:36:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankTemplatesSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankTemplatesSeeder.php on line 9
+[25-Jul-2022 10:37:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionOptionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionOptionSeeder.php on line 8
+[25-Jul-2022 10:41:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionSeeder.php on line 10
+[25-Jul-2022 10:44:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/RolePermissionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/RolePermissionSeeder.php on line 8
+[25-Jul-2022 10:45:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/RoleSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/RoleSeeder.php on line 9
+[25-Jul-2022 10:47:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SocialAccountSeeder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SocialAccountSeeder.php on line 7
+[25-Jul-2022 10:48:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SubscriptionSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SubscriptionSeeder.php on line 10
+[25-Jul-2022 10:49:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SurveyCaseSeeder.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SurveyCaseSeeder.php on line 12
+[25-Jul-2022 10:50:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SurveyCategorySeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SurveyCategorySeeder.php on line 8
+[25-Jul-2022 10:50:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SurveySeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SurveySeeder.php on line 8
+[25-Jul-2022 10:51:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/TransactionSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/TransactionSeeder.php on line 9
+[25-Jul-2022 10:52:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/TypePriceSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/TypePriceSeeder.php on line 9
+[25-Jul-2022 10:53:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/UserSeeder.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/UserSeeder.php on line 14
+[25-Jul-2022 10:53:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/UsersProfileSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/UsersProfileSeeder.php on line 9
+[25-Jul-2022 10:54:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/UsersSubscriptionsSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/UsersSubscriptionsSeeder.php on line 10
+[28-Jul-2022 01:45:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/CategoryPriceSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/CategoryPriceSeeder.php on line 8
+[28-Jul-2022 01:45:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/CategorySubcriptionsSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/CategorySubcriptionsSeeder.php on line 10
+[28-Jul-2022 01:46:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/ChartSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/ChartSeeder.php on line 10
+[28-Jul-2022 01:46:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/DatabaseSeeder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/DatabaseSeeder.php on line 7
+[28-Jul-2022 01:46:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/PermissionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/PermissionSeeder.php on line 8
+[28-Jul-2022 01:47:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/PriceSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/PriceSeeder.php on line 8
+[28-Jul-2022 01:47:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankSubTemplateSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankSubTemplateSeeder.php on line 9
+[28-Jul-2022 01:47:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankTemplatesSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionBankTemplatesSeeder.php on line 9
+[28-Jul-2022 01:49:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionOptionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionOptionSeeder.php on line 8
+[28-Jul-2022 01:51:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/QuestionSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/QuestionSeeder.php on line 10
+[28-Jul-2022 01:53:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/RolePermissionSeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/RolePermissionSeeder.php on line 8
+[28-Jul-2022 01:56:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SocialAccountSeeder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SocialAccountSeeder.php on line 7
+[28-Jul-2022 01:58:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SubscriptionSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SubscriptionSeeder.php on line 10
+[28-Jul-2022 02:00:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SurveyCaseSeeder.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SurveyCaseSeeder.php on line 12
+[28-Jul-2022 09:44:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/AnswerSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/AnswerSeeder.php on line 9
+[28-Jul-2022 09:46:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SurveyCategorySeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SurveyCategorySeeder.php on line 8
+[28-Jul-2022 09:46:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/SurveySeeder.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/SurveySeeder.php on line 8
+[28-Jul-2022 09:47:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/TransactionSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/TransactionSeeder.php on line 9
+[28-Jul-2022 09:49:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/UsersProfileSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/UsersProfileSeeder.php on line 9
+[28-Jul-2022 09:49:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/TypePriceSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/TypePriceSeeder.php on line 9
+[28-Jul-2022 09:49:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/NewsSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/NewsSeeder.php on line 9
+[03-Aug-2022 22:14:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/UsersSubscriptionsSeeder.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/UsersSubscriptionsSeeder.php on line 10
+[04-Aug-2022 04:00:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Seeder" not found in /home/blat6618/public_html/percobaann/database/seeders/UserSeeder.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/seeders/UserSeeder.php on line 14

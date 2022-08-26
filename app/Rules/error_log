@@ -1,0 +1,12 @@
+[12-Jul-2022 07:59:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Validation\Rule" not found in /home/blat6618/public_html/percobaann/app/Rules/IsValidPassword.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Rules/IsValidPassword.php on line 8
+[15-Jul-2022 05:32:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Validation\Rule" not found in /home/blat6618/public_html/percobaann/app/Rules/IsValidPassword.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Rules/IsValidPassword.php on line 8
+[02-Aug-2022 06:02:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Validation\Rule" not found in /home/blat6618/public_html/percobaann/app/Rules/IsValidPassword.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Rules/IsValidPassword.php on line 8

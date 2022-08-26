@@ -1,0 +1,20 @@
+[18-Jul-2022 10:25:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\RouterInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/routing/Router.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/routing/Router.php on line 38
+[20-Jul-2022 00:38:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\Matcher\UrlMatcherInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/routing/RouterInterface.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/routing/RouterInterface.php on line 24
+[21-Jul-2022 10:53:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\RouteCompilerInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/routing/RouteCompiler.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/routing/RouteCompiler.php on line 20
+[21-Jul-2022 16:30:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Routing\trigger_deprecation() in /home/blat6618/public_html/percobaann/vendor/symfony/routing/RouteCollectionBuilder.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/routing/RouteCollectionBuilder.php on line 19
+[22-Jul-2022 05:29:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\Routing\RouterInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/routing/Router.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/routing/Router.php on line 38

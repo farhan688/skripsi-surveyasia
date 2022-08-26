@@ -1,0 +1,24 @@
+[25-Jun-2022 16:41:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/blat6618/public_html/percobaann/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/tests/TestCase.php on line 7
+[27-Jun-2022 08:19:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/blat6618/public_html/percobaann/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/tests/TestCase.php on line 7
+[12-Jul-2022 12:46:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/blat6618/public_html/percobaann/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/tests/TestCase.php on line 7
+[24-Jul-2022 21:31:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/blat6618/public_html/percobaann/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/tests/TestCase.php on line 7
+[25-Jul-2022 17:40:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/blat6618/public_html/percobaann/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/tests/TestCase.php on line 7
+[31-Jul-2022 04:11:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/blat6618/public_html/percobaann/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/tests/TestCase.php on line 7

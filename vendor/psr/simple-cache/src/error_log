@@ -1,0 +1,4 @@
+[20-Jul-2022 22:08:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Psr\SimpleCache\CacheException" not found in /home/blat6618/public_html/percobaann/vendor/psr/simple-cache/src/InvalidArgumentException.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/psr/simple-cache/src/InvalidArgumentException.php on line 11

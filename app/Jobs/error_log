@@ -1,0 +1,36 @@
+[22-Jun-2022 16:30:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldQueue" not found in /home/blat6618/public_html/percobaann/app/Jobs/SendCustomEmailJob.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Jobs/SendCustomEmailJob.php on line 14
+[22-Jun-2022 16:56:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldQueue" not found in /home/blat6618/public_html/percobaann/app/Jobs/QueuedEmailVerificationJob.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Jobs/QueuedEmailVerificationJob.php on line 15
+[22-Jun-2022 17:23:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldQueue" not found in /home/blat6618/public_html/percobaann/app/Jobs/SendWelcomeMailToUserJob.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Jobs/SendWelcomeMailToUserJob.php on line 15
+[25-Jun-2022 21:46:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldQueue" not found in /home/blat6618/public_html/percobaann/app/Jobs/QueuedEmailVerificationJob.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Jobs/QueuedEmailVerificationJob.php on line 15
+[25-Jun-2022 22:51:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldQueue" not found in /home/blat6618/public_html/percobaann/app/Jobs/SendCustomEmailJob.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Jobs/SendCustomEmailJob.php on line 14
+[25-Jun-2022 23:13:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldQueue" not found in /home/blat6618/public_html/percobaann/app/Jobs/SendWelcomeMailToUserJob.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Jobs/SendWelcomeMailToUserJob.php on line 15
+[13-Jul-2022 03:03:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldQueue" not found in /home/blat6618/public_html/percobaann/app/Jobs/SendCustomEmailJob.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Jobs/SendCustomEmailJob.php on line 14
+[15-Jul-2022 01:19:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldQueue" not found in /home/blat6618/public_html/percobaann/app/Jobs/SendWelcomeMailToUserJob.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Jobs/SendWelcomeMailToUserJob.php on line 15
+[15-Jul-2022 21:22:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Illuminate\Contracts\Queue\ShouldQueue" not found in /home/blat6618/public_html/percobaann/app/Jobs/QueuedEmailVerificationJob.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Jobs/QueuedEmailVerificationJob.php on line 15

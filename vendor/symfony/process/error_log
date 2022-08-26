@@ -1,0 +1,4 @@
+[18-Jul-2022 15:24:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Process\Process" not found in /home/blat6618/public_html/percobaann/vendor/symfony/process/PhpProcess.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/process/PhpProcess.php on line 26

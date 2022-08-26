@@ -1,0 +1,36 @@
+[18-Jul-2022 05:47:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\TrimStrings" not found in /home/blat6618/public_html/percobaann/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Middleware/TrimStrings.php on line 7
+[18-Jul-2022 07:41:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\VerifyCsrfToken" not found in /home/blat6618/public_html/percobaann/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Middleware/VerifyCsrfToken.php on line 7
+[19-Jul-2022 04:08:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Middleware\Authenticate" not found in /home/blat6618/public_html/percobaann/app/Http/Middleware/Authenticate.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Middleware/Authenticate.php on line 9
+[19-Jul-2022 16:08:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance" not found in /home/blat6618/public_html/percobaann/app/Http/Middleware/PreventRequestsDuringMaintenance.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Middleware/PreventRequestsDuringMaintenance.php on line 7
+[20-Jul-2022 18:26:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustProxies" not found in /home/blat6618/public_html/percobaann/app/Http/Middleware/TrustProxies.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Middleware/TrustProxies.php on line 8
+[21-Jul-2022 16:29:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Http\Middleware\TrustHosts" not found in /home/blat6618/public_html/percobaann/app/Http/Middleware/TrustHosts.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Middleware/TrustHosts.php on line 7
+[21-Jul-2022 21:06:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Cookie\Middleware\EncryptCookies" not found in /home/blat6618/public_html/percobaann/app/Http/Middleware/EncryptCookies.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Middleware/EncryptCookies.php on line 7
+[22-Jul-2022 00:49:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\TrimStrings" not found in /home/blat6618/public_html/percobaann/app/Http/Middleware/TrimStrings.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Middleware/TrimStrings.php on line 7
+[22-Jul-2022 02:45:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\Middleware\VerifyCsrfToken" not found in /home/blat6618/public_html/percobaann/app/Http/Middleware/VerifyCsrfToken.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Middleware/VerifyCsrfToken.php on line 7

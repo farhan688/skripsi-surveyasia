@@ -1,0 +1,8 @@
+[20-Jul-2022 12:25:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Facade\IgnitionContracts\Solution" not found in /home/blat6618/public_html/percobaann/vendor/facade/ignition-contracts/src/BaseSolution.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/facade/ignition-contracts/src/BaseSolution.php on line 5
+[21-Jul-2022 13:44:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Facade\IgnitionContracts\Solution" not found in /home/blat6618/public_html/percobaann/vendor/facade/ignition-contracts/src/RunnableSolution.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/facade/ignition-contracts/src/RunnableSolution.php on line 5

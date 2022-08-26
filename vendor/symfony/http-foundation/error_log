@@ -1,0 +1,44 @@
+[07-Jul-2022 09:37:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/InputBag.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/InputBag.php on line 21
+[18-Jul-2022 14:28:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/StreamedResponse.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/StreamedResponse.php on line 27
+[18-Jul-2022 20:21:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/RedirectResponse.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/RedirectResponse.php on line 19
+[19-Jul-2022 07:32:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/ServerBag.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/ServerBag.php on line 21
+[19-Jul-2022 16:08:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\RequestMatcher" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/ExpressionRequestMatcher.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/ExpressionRequestMatcher.php on line 21
+[19-Jul-2022 18:39:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/InputBag.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/InputBag.php on line 21
+[20-Jul-2022 02:21:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/BinaryFileResponse.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/BinaryFileResponse.php on line 26
+[20-Jul-2022 13:11:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\HeaderBag" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/ResponseHeaderBag.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/ResponseHeaderBag.php on line 19
+[20-Jul-2022 18:27:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\Response" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/JsonResponse.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/JsonResponse.php on line 25
+[21-Jul-2022 10:56:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\ParameterBag" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/FileBag.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/FileBag.php on line 22
+[21-Jul-2022 23:52:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Symfony\Component\HttpFoundation\RequestMatcherInterface" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/RequestMatcher.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/RequestMatcher.php on line 19

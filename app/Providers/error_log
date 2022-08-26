@@ -1,0 +1,64 @@
+[30-Jun-2022 02:47:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/BroadcastServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/BroadcastServiceProvider.php on line 8
+[01-Jul-2022 05:20:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/AppServiceProvider.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/AppServiceProvider.php on line 11
+[01-Jul-2022 05:25:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/AppServiceProvider.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/AppServiceProvider.php on line 11
+[01-Jul-2022 05:35:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\AuthServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/AuthServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/AuthServiceProvider.php on line 12
+[01-Jul-2022 05:39:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\AuthServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/AuthServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/AuthServiceProvider.php on line 12
+[01-Jul-2022 05:40:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/BroadcastServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/BroadcastServiceProvider.php on line 8
+[01-Jul-2022 05:41:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/BroadcastServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/BroadcastServiceProvider.php on line 8
+[01-Jul-2022 05:43:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\EventServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/EventServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/EventServiceProvider.php on line 10
+[02-Jul-2022 08:39:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/RouteServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/RouteServiceProvider.php on line 12
+[02-Jul-2022 08:39:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\EventServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/EventServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/EventServiceProvider.php on line 10
+[02-Jul-2022 08:39:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/RouteServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/RouteServiceProvider.php on line 12
+[12-Jul-2022 12:43:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\EventServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/EventServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/EventServiceProvider.php on line 10
+[13-Jul-2022 05:46:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/BroadcastServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/BroadcastServiceProvider.php on line 8
+[14-Jul-2022 09:22:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\AuthServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/AuthServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/AuthServiceProvider.php on line 12
+[15-Jul-2022 11:34:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\ServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/AppServiceProvider.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/AppServiceProvider.php on line 11
+[15-Jul-2022 11:35:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Support\Providers\RouteServiceProvider" not found in /home/blat6618/public_html/percobaann/app/Providers/RouteServiceProvider.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Providers/RouteServiceProvider.php on line 12

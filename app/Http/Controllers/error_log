@@ -1,0 +1,68 @@
+[18-Jul-2022 06:46:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/UsersProfileController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/UsersProfileController.php on line 16
+[18-Jul-2022 16:20:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/HomeController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/HomeController.php on line 16
+[18-Jul-2022 17:19:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/AnswerController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/AnswerController.php on line 8
+[18-Jul-2022 22:09:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/SocialShareController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/SocialShareController.php on line 9
+[19-Jul-2022 09:15:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/AssignUserRole.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/AssignUserRole.php on line 10
+[19-Jul-2022 10:58:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/QuestionController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/QuestionController.php on line 8
+[19-Jul-2022 13:35:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/Controller.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/Controller.php on line 10
+[19-Jul-2022 13:38:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/MidtransController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/MidtransController.php on line 11
+[19-Jul-2022 18:38:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/ContactController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/ContactController.php on line 9
+[19-Jul-2022 18:38:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/SubcriptionController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/SubcriptionController.php on line 13
+[20-Jul-2022 06:56:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/NewsController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/NewsController.php on line 12
+[21-Jul-2022 11:48:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/PDFController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/PDFController.php on line 8
+[21-Jul-2022 18:22:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/TutorialController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/TutorialController.php on line 9
+[21-Jul-2022 19:16:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/TransactionController.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/TransactionController.php on line 14
+[21-Jul-2022 23:52:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/PickRoleActionController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/PickRoleActionController.php on line 12
+[22-Jul-2022 01:49:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Routing\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/UsersProfileController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/UsersProfileController.php on line 16
+[24-Jul-2022 00:31:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/blat6618/public_html/percobaann/app/Http/Controllers/NewsController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Http/Controllers/NewsController.php on line 12

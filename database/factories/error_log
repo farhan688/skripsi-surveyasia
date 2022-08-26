@@ -1,0 +1,240 @@
+[19-Jun-2022 19:21:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UsersSubscriptionsFactory.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UsersSubscriptionsFactory.php on line 13
+[21-Jun-2022 04:08:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SurveyCategoryFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SurveyCategoryFactory.php on line 7
+[21-Jun-2022 15:14:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SocialAccountFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SocialAccountFactory.php on line 7
+[21-Jun-2022 20:30:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SubscriptionFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SubscriptionFactory.php on line 8
+[23-Jun-2022 14:23:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SubTypePriceFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SubTypePriceFactory.php on line 7
+[23-Jun-2022 14:23:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UsersProfileFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UsersProfileFactory.php on line 11
+[29-Jun-2022 04:32:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/TransactionFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/TransactionFactory.php on line 11
+[12-Jul-2022 07:05:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/NewsFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/NewsFactory.php on line 8
+[12-Jul-2022 13:43:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/TransactionFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/TransactionFactory.php on line 11
+[12-Jul-2022 18:37:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UsersSubscriptionsFactory.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UsersSubscriptionsFactory.php on line 13
+[13-Jul-2022 10:26:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/AnswerFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/AnswerFactory.php on line 8
+[13-Jul-2022 17:08:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/ChartFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/ChartFactory.php on line 7
+[13-Jul-2022 18:01:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SocialAccountFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SocialAccountFactory.php on line 7
+[14-Jul-2022 02:02:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/PermissionFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/PermissionFactory.php on line 8
+[14-Jul-2022 11:08:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UserFactory.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UserFactory.php on line 12
+[14-Jul-2022 13:56:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SurveyCategoryFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SurveyCategoryFactory.php on line 7
+[14-Jul-2022 15:45:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SubscriptionFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SubscriptionFactory.php on line 8
+[14-Jul-2022 17:36:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SubTypePriceFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SubTypePriceFactory.php on line 7
+[14-Jul-2022 22:12:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/RoleFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/RoleFactory.php on line 8
+[14-Jul-2022 23:18:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UsersProfileFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UsersProfileFactory.php on line 11
+[15-Jul-2022 05:29:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SurveyFactory.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SurveyFactory.php on line 9
+[15-Jul-2022 16:17:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/QuestionFactory.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/QuestionFactory.php on line 9
+[16-Jul-2022 19:06:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/AnswerFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/AnswerFactory.php on line 8
+[16-Jul-2022 19:11:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/ChartFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/ChartFactory.php on line 7
+[16-Jul-2022 19:24:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/NewsFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/NewsFactory.php on line 8
+[16-Jul-2022 19:50:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/PermissionFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/PermissionFactory.php on line 8
+[16-Jul-2022 20:19:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/QuestionFactory.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/QuestionFactory.php on line 9
+[16-Jul-2022 21:18:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/RoleFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/RoleFactory.php on line 8
+[16-Jul-2022 22:49:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SurveyFactory.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SurveyFactory.php on line 9
+[18-Jul-2022 10:14:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UserFactory.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UserFactory.php on line 12
+[24-Jul-2022 21:06:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/AnswerFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/AnswerFactory.php on line 8
+[24-Jul-2022 21:06:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/ChartFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/ChartFactory.php on line 7
+[24-Jul-2022 21:07:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/NewsFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/NewsFactory.php on line 8
+[24-Jul-2022 21:07:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/PermissionFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/PermissionFactory.php on line 8
+[24-Jul-2022 21:08:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/QuestionFactory.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/QuestionFactory.php on line 9
+[24-Jul-2022 21:08:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/RoleFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/RoleFactory.php on line 8
+[24-Jul-2022 21:10:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SocialAccountFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SocialAccountFactory.php on line 7
+[24-Jul-2022 21:12:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SubTypePriceFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SubTypePriceFactory.php on line 7
+[24-Jul-2022 21:12:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SubscriptionFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SubscriptionFactory.php on line 8
+[24-Jul-2022 21:13:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SurveyCategoryFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SurveyCategoryFactory.php on line 7
+[24-Jul-2022 21:14:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SurveyFactory.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SurveyFactory.php on line 9
+[24-Jul-2022 21:17:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/TransactionFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/TransactionFactory.php on line 11
+[24-Jul-2022 21:19:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UserFactory.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UserFactory.php on line 12
+[24-Jul-2022 21:21:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UsersProfileFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UsersProfileFactory.php on line 11
+[24-Jul-2022 21:22:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UsersSubscriptionsFactory.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UsersSubscriptionsFactory.php on line 13
+[26-Jul-2022 20:37:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UsersSubscriptionsFactory.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UsersSubscriptionsFactory.php on line 13
+[27-Jul-2022 10:40:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/AnswerFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/AnswerFactory.php on line 8
+[27-Jul-2022 10:40:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/ChartFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/ChartFactory.php on line 7
+[27-Jul-2022 10:40:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/NewsFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/NewsFactory.php on line 8
+[27-Jul-2022 10:41:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/PermissionFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/PermissionFactory.php on line 8
+[27-Jul-2022 10:41:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/QuestionFactory.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/QuestionFactory.php on line 9
+[27-Jul-2022 10:41:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/RoleFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/RoleFactory.php on line 8
+[27-Jul-2022 10:41:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SurveyFactory.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SurveyFactory.php on line 9
+[27-Jul-2022 10:41:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UserFactory.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UserFactory.php on line 12
+[27-Jul-2022 20:39:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SurveyCategoryFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SurveyCategoryFactory.php on line 7
+[28-Jul-2022 07:11:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/UsersProfileFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/UsersProfileFactory.php on line 11
+[30-Jul-2022 02:43:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SocialAccountFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SocialAccountFactory.php on line 7
+[30-Jul-2022 21:36:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SubTypePriceFactory.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SubTypePriceFactory.php on line 7
+[31-Jul-2022 00:29:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/SubscriptionFactory.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/SubscriptionFactory.php on line 8
+[01-Aug-2022 05:54:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Database\Eloquent\Factories\Factory" not found in /home/blat6618/public_html/percobaann/database/factories/TransactionFactory.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/database/factories/TransactionFactory.php on line 11

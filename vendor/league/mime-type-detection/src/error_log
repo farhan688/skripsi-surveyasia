@@ -1,0 +1,20 @@
+[19-Jul-2022 02:16:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "League\MimeTypeDetection\ExtensionToMimeTypeMap" not found in /home/blat6618/public_html/percobaann/vendor/league/mime-type-detection/src/EmptyExtensionToMimeTypeMap.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/league/mime-type-detection/src/EmptyExtensionToMimeTypeMap.php on line 7
+[20-Jul-2022 01:33:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "League\MimeTypeDetection\ExtensionToMimeTypeMap" not found in /home/blat6618/public_html/percobaann/vendor/league/mime-type-detection/src/OverridingExtensionToMimeTypeMap.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/league/mime-type-detection/src/OverridingExtensionToMimeTypeMap.php on line 5
+[20-Jul-2022 15:02:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "League\MimeTypeDetection\MimeTypeDetector" not found in /home/blat6618/public_html/percobaann/vendor/league/mime-type-detection/src/ExtensionMimeTypeDetector.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/league/mime-type-detection/src/ExtensionMimeTypeDetector.php on line 9
+[21-Jul-2022 05:18:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "League\MimeTypeDetection\MimeTypeDetector" not found in /home/blat6618/public_html/percobaann/vendor/league/mime-type-detection/src/FinfoMimeTypeDetector.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/league/mime-type-detection/src/FinfoMimeTypeDetector.php on line 12
+[21-Jul-2022 16:36:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "League\MimeTypeDetection\ExtensionToMimeTypeMap" not found in /home/blat6618/public_html/percobaann/vendor/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/league/mime-type-detection/src/GeneratedExtensionToMimeTypeMap.php on line 7

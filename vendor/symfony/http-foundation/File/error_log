@@ -1,0 +1,8 @@
+[16-Aug-2022 13:25:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\File" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/File/Stream.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/File/Stream.php on line 19
+[21-Aug-2022 19:07:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpFoundation\File\File" not found in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/File/UploadedFile.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/http-foundation/File/UploadedFile.php on line 32

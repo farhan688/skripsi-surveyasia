@@ -1,0 +1,12 @@
+[25-Jun-2022 21:54:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Tests\TestCase" not found in /home/blat6618/public_html/percobaann/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/tests/Feature/ExampleTest.php on line 8
+[27-Jun-2022 13:40:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Tests\TestCase" not found in /home/blat6618/public_html/percobaann/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/tests/Feature/ExampleTest.php on line 8
+[13-Jul-2022 20:42:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Tests\TestCase" not found in /home/blat6618/public_html/percobaann/tests/Feature/ExampleTest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/tests/Feature/ExampleTest.php on line 8

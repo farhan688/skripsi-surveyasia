@@ -1,0 +1,12 @@
+[02-Jul-2022 08:38:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Notifications\VerifyEmail" not found in /home/blat6618/public_html/percobaann/app/Notifications/Auth/QueuedEmailVerification.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/Auth/QueuedEmailVerification.php on line 14
+[02-Jul-2022 08:38:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Notifications\VerifyEmail" not found in /home/blat6618/public_html/percobaann/app/Notifications/Auth/QueuedEmailVerification.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/Auth/QueuedEmailVerification.php on line 14
+[14-Aug-2022 04:00:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Illuminate\Auth\Notifications\VerifyEmail" not found in /home/blat6618/public_html/percobaann/app/Notifications/Auth/QueuedEmailVerification.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/app/Notifications/Auth/QueuedEmailVerification.php on line 14

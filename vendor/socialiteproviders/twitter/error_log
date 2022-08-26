@@ -1,0 +1,12 @@
+[17-Jul-2022 14:09:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "SocialiteProviders\Manager\OAuth1\AbstractProvider" not found in /home/blat6618/public_html/percobaann/vendor/socialiteproviders/twitter/Provider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/socialiteproviders/twitter/Provider.php on line 8
+[19-Jul-2022 05:05:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "SocialiteProviders\Manager\OAuth1\Server" not found in /home/blat6618/public_html/percobaann/vendor/socialiteproviders/twitter/Server.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/socialiteproviders/twitter/Server.php on line 10
+[21-Jul-2022 09:01:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "SocialiteProviders\Manager\OAuth1\AbstractProvider" not found in /home/blat6618/public_html/percobaann/vendor/socialiteproviders/twitter/Provider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/socialiteproviders/twitter/Provider.php on line 8

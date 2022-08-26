@@ -1,0 +1,4 @@
+[23-Jul-2022 20:59:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Psr\Log\AbstractLogger" not found in /home/blat6618/public_html/percobaann/vendor/symfony/debug/BufferingLogger.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/symfony/debug/BufferingLogger.php on line 25

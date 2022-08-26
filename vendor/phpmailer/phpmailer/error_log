@@ -1,0 +1,15 @@
+[20-Jul-2022 22:57:50 Asia/Jakarta] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/blat6618/public_html/percobaann/vendor/phpmailer/phpmailer/get_oauth_token.php on line 61
+[20-Jul-2022 22:57:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/blat6618/public_html/percobaann/vendor/phpmailer/phpmailer/get_oauth_token.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/phpmailer/phpmailer/get_oauth_token.php on line 61
+[21-Jul-2022 18:35:21 Asia/Jakarta] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/blat6618/public_html/percobaann/vendor/phpmailer/phpmailer/get_oauth_token.php on line 61
+[21-Jul-2022 18:35:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/blat6618/public_html/percobaann/vendor/phpmailer/phpmailer/get_oauth_token.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/phpmailer/phpmailer/get_oauth_token.php on line 61
+[21-Jul-2022 22:12:32 Asia/Jakarta] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in /home/blat6618/public_html/percobaann/vendor/phpmailer/phpmailer/get_oauth_token.php on line 61
+[21-Jul-2022 22:12:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/blat6618/public_html/percobaann/vendor/phpmailer/phpmailer/get_oauth_token.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/phpmailer/phpmailer/get_oauth_token.php on line 61

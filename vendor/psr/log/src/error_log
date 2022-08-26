@@ -1,0 +1,8 @@
+[19-Jul-2022 04:14:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerInterface" not found in /home/blat6618/public_html/percobaann/vendor/psr/log/src/AbstractLogger.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/psr/log/src/AbstractLogger.php on line 12
+[19-Jul-2022 06:01:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Psr\Log\AbstractLogger" not found in /home/blat6618/public_html/percobaann/vendor/psr/log/src/NullLogger.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/psr/log/src/NullLogger.php on line 13

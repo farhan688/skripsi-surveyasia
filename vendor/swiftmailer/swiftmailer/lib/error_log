@@ -1,0 +1,6 @@
+[18-Jul-2022 06:52:37 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, bool given in /home/blat6618/public_html/percobaann/vendor/swiftmailer/swiftmailer/lib/swiftmailer_generate_mimes_config.php on line 133
+[20-Jul-2022 15:02:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Swift_Preferences" not found in /home/blat6618/public_html/percobaann/vendor/swiftmailer/swiftmailer/lib/preferences.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/blat6618/public_html/percobaann/vendor/swiftmailer/swiftmailer/lib/preferences.php on line 9
+[22-Jul-2022 01:56:09 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, bool given in /home/blat6618/public_html/percobaann/vendor/swiftmailer/swiftmailer/lib/swiftmailer_generate_mimes_config.php on line 133
