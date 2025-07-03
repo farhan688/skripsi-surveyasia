@@ -1,30 +1,35 @@
 <?php
 
-use App\Http\Controllers\Admin\ChartController;
 use Illuminate\Support\Facades\Auth;
+use UniSharp\LaravelFilemanager\Lfm;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\NewsController;
-use App\Http\Controllers\Admin\QuestionBankTemplateController;
-use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\PDFController;
 use App\Http\Controllers\AssignUserRole;
-use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\Auth\SocialAccountController;
-use App\Http\Controllers\NewsController as News;
-use App\Http\Controllers\Auth\VerificationController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\MidtransController;
-use App\Http\Controllers\PickRoleActionController;
 use App\Http\Controllers\QuestionController;
-use App\Http\Controllers\Respondent\SurveyController as RespondenSurveyController;
-use App\Http\Controllers\Respondent\Validate\ValidationController;
-use App\Http\Controllers\Survey\SurveyController;
-use App\Http\Controllers\TransactionController;
-use App\Http\Controllers\SubcriptionController;
 use App\Http\Controllers\TutorialController;
-use App\Http\Controllers\Admin\SurveyController as SurveyInAdmin;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PDFController;
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\NewsController;
+use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\ChartController;
+use App\Http\Controllers\LeaderboardController;
+use App\Http\Controllers\SocialShareController;
+use App\Http\Controllers\SubcriptionController;
+use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\NewsController as News;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Survey\SurveyController;
+use App\Http\Controllers\PickRoleActionController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Auth\VerificationController;
+use App\Http\Controllers\Auth\SocialAccountController;
 use App\Http\Controllers\Respondent\SurveyHistoryController;
+use App\Http\Controllers\Admin\QuestionBankTemplateController;
+use App\Http\Controllers\Admin\SurveyController as SurveyInAdmin;
+use App\Http\Controllers\Respondent\Validate\ValidationController;
+use App\Http\Controllers\Respondent\SurveyController as RespondenSurveyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -127,14 +132,14 @@ Route::middleware(['auth', 'role:researcher', 'verified'])->group(function () {
                         'storeSurvey',
                     ])->name('store');
 
-                    
+
 
                     //delete survey
                     Route::delete('/{id}', [SurveyController::class, 'destroy'])->name('delete');
 
                     //update survey Judul & Desc
                     Route::post('/{survey}/manage', [SurveyController::class, 'update'])->name('update');
-                    
+
                     //update survey Logo
                     Route::post('/{survey}/manage/update-logo', [SurveyController::class, 'updateLogo'])->name('updateLogo');
 
@@ -226,6 +231,10 @@ Route::middleware(['auth', 'role:respondent', 'verified'])->group(function () {
             Route::view('/survey/change-point', 'survey.change-point')->name('survey.change-point');
             Route::view('/survey/pre-survey', 'survey.pre-survey')->name('survey.pre-survey');
             Route::view('/survey/pre-soal', 'survey.pre-soal');
+            Route::get('/survey/leaderboard', [
+                LeaderboardController::class, 
+                'index'
+            ])->name('survey.leaderboard');
             Route::view('/survey/pre-soall', 'survey.pre-soall');
             Route::get('dashboard', [
                 RespondenSurveyController::class,
@@ -293,10 +302,12 @@ Route::middleware(['auth', 'role:respondent', 'verified'])->group(function () {
                     // verifikasi admin
 
                     Route::get('{user}/pending', [
-                        ValidationController::class, 'pending'
+                        ValidationController::class,
+                        'pending'
                     ])->name('pending');
                     Route::get('{user}/accept', [
-                        ValidationController::class, 'accept'
+                        ValidationController::class,
+                        'accept'
                     ])->name('accept');
                 });
         });
@@ -312,11 +323,11 @@ Route::middleware(['auth', 'role:respondent', 'verified'])->group(function () {
 // shareable link
 Route::middleware(['auth', 'verified', 'verify_profile'])->group(function () {
     Route::prefix('survey')
-    ->name('survey.')
-    ->group(function() {
-        Route::get('{code}', [RespondenSurveyController::class, 'sharedSurvey'])->name('share');
-        Route::post('{code}', [RespondenSurveyController::class, 'updateSharedSurvey'])->name('update');
-    });
+        ->name('survey.')
+        ->group(function () {
+            Route::get('{code}', [RespondenSurveyController::class, 'sharedSurvey'])->name('share');
+            Route::post('{code}', [RespondenSurveyController::class, 'updateSharedSurvey'])->name('update');
+        });
 });
 
 //editprofile
@@ -517,7 +528,8 @@ Route::get('midtrans/error', [MidtransController::class, 'errorRedirect'])->name
 
 // verif
 Route::get('{user}/failed', [
-    ValidationController::class, 'failed'
+    ValidationController::class,
+    'failed'
 ])->name('failed');
 
 // for publish file PDF

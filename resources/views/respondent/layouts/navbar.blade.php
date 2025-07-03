@@ -12,6 +12,9 @@
                     <a class="nav-link" href="/">Beranda</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ route('respondent.survey.leaderboard') }}">Leaderboard</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('respondent.survey.history') }}">Riwayat&nbspSurvey</a>
                 </li>
                 <li class="nav-item">

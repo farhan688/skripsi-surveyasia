@@ -240,9 +240,9 @@ class ComposerStaticInit2e99521258556482617bb76594b4b726
         ),
         'phpDocumentor\\Reflection\\' => 
         array (
-            0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            0 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
         ),
         'ZipStream\\' => 
         array (
@@ -783,6 +783,7 @@ class ComposerStaticInit2e99521258556482617bb76594b4b726
         'App\\Http\\Controllers\\PDFController' => __DIR__ . '/../..' . '/app/Http/Controllers/PDFController.php',
         'App\\Http\\Controllers\\PickRoleActionController' => __DIR__ . '/../..' . '/app/Http/Controllers/PickRoleActionController.php',
         'App\\Http\\Controllers\\QuestionController' => __DIR__ . '/../..' . '/app/Http/Controllers/QuestionController.php',
+        'App\\Http\\Controllers\\Respondent\\RespondentValidateController' => __DIR__ . '/../..' . '/app/Http/Controllers/Respondent/RespondentValidateController.php',
         'App\\Http\\Controllers\\Respondent\\SurveyController' => __DIR__ . '/../..' . '/app/Http/Controllers/Respondent/SurveyController.php',
         'App\\Http\\Controllers\\Respondent\\SurveyHistoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/Respondent/SurveyHistoryController.php',
         'App\\Http\\Controllers\\Respondent\\Validate\\ValidationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Respondent/Validate/ValidationController.php',
