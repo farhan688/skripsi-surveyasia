@@ -19,7 +19,7 @@ class LeaderboardController extends Controller
             (object) ['id' => 6, 'name' => 'Fitri Handayani', 'points' => 2280],
             (object) ['id' => 7, 'name' => 'Gunawan Wijaya', 'points' => 2150],
             (object) ['id' => 8, 'name' => 'Hani Kusuma', 'points' => 2050],
-            (object) ['id' => 9, 'name' => 'Indra Permana', 'points' => 1980],
+            
             (object) ['id' => 10, 'name' => 'Joko Widodo', 'points' => 1850],
             (object) ['id' => 11, 'name' => 'Kartika Sari', 'points' => 1750],
             (object) ['id' => 12, 'name' => 'Lukman Hakim', 'points' => 1650],
