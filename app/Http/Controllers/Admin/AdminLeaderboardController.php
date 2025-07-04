@@ -1,14 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Collection;
 
-class LeaderboardController extends Controller
+class AdminLeaderboardController extends Controller
 {
+    public $title = "Leaderboard";
     public function index()
     {
+        $title = $this->title;
         // Sample data - dalam implementasi nyata, ambil dari database
         $leaderboard = collect([
             (object) ['id' => 1, 'name' => 'Ahmad Rizki Pratama', 'points' => 2850],
@@ -31,7 +33,7 @@ class LeaderboardController extends Controller
         // Urutkan berdasarkan poin tertinggi
         $leaderboard = $leaderboard->sortByDesc('points')->values();
 
-        return view('survey.leaderboard', compact('leaderboard'));
+        return view('admin.leaderboard.index', compact('leaderboard','title'));
     }
 
     // Method untuk implementasi dengan database
@@ -45,6 +47,6 @@ class LeaderboardController extends Controller
         //     ->orderBy('points', 'desc')
         //     ->get();
 
-        return view('survey.leaderboard', compact('leaderboard'));
+        return view('admin.leaderboard.index', compact('leaderboard'));
     }
 }

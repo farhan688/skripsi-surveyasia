@@ -37,6 +37,12 @@
             <span class="ms-3 text-sidebar" aria-current="page">Pengguna</span>
         </div>
     </a>
+    <a href="{{ route('admin.leaderboard.index') }}" class="text-decoration-none">
+        <div class="d-flex align-items-center px-4 py-3 {{ Request::is('admin/leaderboard') ? 'active' : '' }}">
+            <img src="{{ asset('assets/img/vec-trophy.svg') }}" alt="" width="16px" height="16px">
+            <span class="ms-3 text-sidebar" aria-current="page">Leaderboard</span>
+        </div>
+    </a>
     <a href="{{ route('admin.news.index') }}" class="text-decoration-none">
         <div class="d-flex align-items-center px-4 py-3 {{ Request::is('admin/news*') ? 'active' : '' }}">
             <img src="{{ asset('assets/img/vec-blog.svg') }}" alt="" width="16px" height="16px">

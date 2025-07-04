@@ -231,11 +231,12 @@ Route::middleware(['auth', 'role:respondent', 'verified'])->group(function () {
             Route::view('/survey/change-point', 'survey.change-point')->name('survey.change-point');
             Route::view('/survey/pre-survey', 'survey.pre-survey')->name('survey.pre-survey');
             Route::view('/survey/pre-soal', 'survey.pre-soal');
+            Route::view('/survey/pre-soall', 'survey.pre-soall');
+            
             Route::get('/survey/leaderboard', [
                 LeaderboardController::class, 
                 'index'
             ])->name('survey.leaderboard');
-            Route::view('/survey/pre-soall', 'survey.pre-soall');
             Route::get('dashboard', [
                 RespondenSurveyController::class,
                 'dashboard',
@@ -393,7 +394,8 @@ Route::middleware(['is_admin', 'role:admin'])->group(function () {
 
         /* show admin dashboard */
         Route::get('dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
-
+        // show admin leaderboard
+        Route::get('/leaderboard', [\App\Http\Controllers\Admin\AdminLeaderboardController::class, 'index'])->name('leaderboard.index');
         /* users resource */
         Route::resource('users', UserController::class);
         // user custom notify
