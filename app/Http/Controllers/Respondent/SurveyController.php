@@ -61,11 +61,17 @@ class SurveyController extends Controller
 
         abort_if(!$insert, 403, 'Bad request');
 
+           
+        $user = \App\Models\User::find(Auth::id());
+        $user->points += 200;
+        $user->save();
+
         $survey = Survey::select(['id', 'title', 'slug'])
             ->where(['id' => $request->survey_id])
             ->first();
 
-        return redirect()->route('survey.complete', $survey->slug);
+        return redirect()->route('survey.complete', $survey->slug)
+            ->with('success', 'Terima kasih! Anda mendapatkan 200 poin.');;
     }
 
     /**

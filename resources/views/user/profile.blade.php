@@ -76,6 +76,13 @@
                         alt="{{ Auth::user()->nama_lengkap }}"
                         class="img-fluid d-block mb-2 ms-3 rounded-pill object-fit-cover" name="avatar">
                     @endif
+
+                    {{-- Tambahkan badge poin --}}
+                    <div class="ms-3">
+                        <span class="badge bg-warning text-dark fs-6">
+                            <i class="fas fa-coins"></i> {{ Auth::user()->points ?? 0 }} Poin
+                        </span>
+                    </div>
                     <span class="d-flex">
                         <a href="{{ route('edit-profile') }}" class="link-orange text-decoration-none">Change</a>
                         <p class="text-orange m-0 mx-1">|</p>

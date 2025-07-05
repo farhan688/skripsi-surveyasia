@@ -50,7 +50,14 @@
         {{-- End Sidebar --}}
 
         {{-- User Profile --}}
-        <div class="col-lg-10 shadow pt-4 pb-5 px-5" style="border-radius: 16px;">
+        <div class="col-lg-10 shadow pt-4 pb-5 px-5" style="border-radius: 16px; position: relative;">
+            {{-- Badge Poin di pojok kanan atas --}}
+            <div class="position-absolute top-0 end-0 mt-3 me-3">
+                <span class="badge bg-warning text-dark fs-6 shadow">
+                    <i class="fas fa-coins"></i> {{ Auth::user()->points ?? 0 }} Point
+                </span>
+            </div>
+            {{-- User Profile Content --}}
             @if (session('success'))
             <div class="alert alert-success alert-dismissible show fade">
                 {{ session('success') }}

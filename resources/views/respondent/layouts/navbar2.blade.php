@@ -11,6 +11,9 @@
                 <a class="nav-link" href="/">Beranda</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="{{ route('respondent.survey.leaderboard') }}">Leaderboard</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{ route('respondent.survey.history') }}">Riwayat Survey</a>
             </li>
             <li class="nav-item">
@@ -20,53 +23,53 @@
                 <a class="nav-link" href="{{ route('news.index') }}">Berita</a>
             </li>
             @auth
-            @if (\Auth::user()->avatar == null)
-            <li>
-                <img class="rounded-circle object-fit-cover" src="{{ asset('assets/img/noimage.png') }}" width="40px"
-                    name="avatar" height="40px" alt="User Avatar">
-            </li>
-            @elseif (Auth::user()->provider_name != null)
-            <li>
-                <img src="{{ Auth::user()->avatar }}" alt="{{ Auth::user()->nama_lengkap }}" width="40" height="40"
-                    class="d-block mb-2 ms-3 rounded-pill object-fit-cover">
-            </li>
-            @else
-            <li>
-                <img class="rounded-circle object-fit-cover" src="{{ asset('storage/' . Auth::user()->avatar) }}"
-                    width="40px" height="40px" alt="User Avatar" name="avatar">
-            </li>
-            @endif
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    {{ Auth::user()->nama_lengkap }}
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                @if (\Auth::user()->avatar == null)
                     <li>
-                        <a class="dropdown-item" href="{{ route('user-profile') }}"><i class="fas fa-user fa-fw"></i>
-                            Profil
-                        </a>
+                        <img class="rounded-circle object-fit-cover" src="{{ asset('assets/img/noimage.png') }}"
+                            width="40px" name="avatar" height="40px" alt="User Avatar">
                     </li>
+                @elseif (Auth::user()->provider_name != null)
                     <li>
-                        <a class="dropdown-item" href="/"><i class="fas fa-tachometer-alt fa-fw"></i> Beranda</a>
+                        <img src="{{ Auth::user()->avatar }}" alt="{{ Auth::user()->nama_lengkap }}" width="40"
+                            height="40" class="d-block mb-2 ms-3 rounded-pill object-fit-cover">
                     </li>
+                @else
                     <li>
-                        <a class="dropdown-item" href="{{ route('change.notice') }}"><i
-                                class="fas fa-user-friends fa-fw"></i> Jadi Researcher</a>
+                        <img class="rounded-circle object-fit-cover" src="{{ asset('storage/' . Auth::user()->avatar) }}"
+                            width="40px" height="40px" alt="User Avatar" name="avatar">
                     </li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li>
-                        <form action="{{ route('logout') }}" method="POST" class="m-0">
-                            @csrf
-                            <button type="submit" class="dropdown-item"><i class="fas fa-sign-out-alt fa-fw"></i>
-                                Keluar
-                            </button>
-                        </form>
-                    </li>
-                </ul>
-            </li>
+                @endif
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ Auth::user()->nama_lengkap }}
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="{{ route('user-profile') }}"><i class="fas fa-user fa-fw"></i>
+                                Profil
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/"><i class="fas fa-tachometer-alt fa-fw"></i> Beranda</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ route('change.notice') }}"><i
+                                    class="fas fa-user-friends fa-fw"></i> Jadi Researcher</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <form action="{{ route('logout') }}" method="POST" class="m-0">
+                                @csrf
+                                <button type="submit" class="dropdown-item"><i class="fas fa-sign-out-alt fa-fw"></i>
+                                    Keluar
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
             @endauth
         </ul>
     </div>

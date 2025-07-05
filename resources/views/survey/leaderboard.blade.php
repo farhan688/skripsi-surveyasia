@@ -8,7 +8,7 @@
     <div class="bg-gradient-to-r from-orange to-danger py-5" style="background: linear-gradient(to right, #f97316, #ef4444);">
         <div class="container py-4">
             <h1 class="text-white fw-bold mb-2">Leaderboard</h1>
-            <p class="text-white-50 mb-0">Peringkat peserta berdasarkan poin yang dikumpulkan</p>
+            <p class="text-white-50 mb-0">Peringkat peserta berdasarkan point yang dikumpulkan</p>
         </div>
     </div>
 
@@ -23,8 +23,8 @@
                     <div class="bg-secondary text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
                         <span class="fw-bold fs-5">2</span>
                     </div>
-                    <h3 class="fw-semibold mb-1">{{ $leaderboard[1]->name }}</h3>
-                    <p class="text-muted mb-2">{{ number_format($leaderboard[1]->points) }} poin</p>
+                    <h3 class="fw-semibold mb-1">{{ $podium[1]->nama_lengkap }}</h3>
+                    <p class="text-muted mb-2">{{ number_format($podium[1]->points) }} point</p>
                     <div class="badge bg-secondary bg-opacity-10 text-secondary">
                         Peringkat 2
                     </div>
@@ -37,8 +37,8 @@
                     <div class="bg-warning text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; background: linear-gradient(to right, #f97316, #ef4444) !important;">
                         <i class="fas fa-trophy fs-4"></i>
                     </div>
-                    <h3 class="fw-bold mb-1">{{ $leaderboard[0]->name }}</h3>
-                    <p class="text-muted mb-2 fs-5">{{ number_format($leaderboard[0]->points) }} poin</p>
+                    <h3 class="fw-bold mb-1">{{ $podium[0]->nama_lengkap }}</h3>
+                    <p class="text-muted mb-2 fs-5">{{ number_format($podium[0]->points) }} point</p>
                     <div class="badge text-white" style="background: linear-gradient(to right, #f97316, #ef4444);">
                         🏆 Juara 1
                     </div>
@@ -51,8 +51,8 @@
                     <div class="bg-info text-white rounded-circle mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background-color: #fdba74 !important;">
                         <span class="fw-bold fs-5">3</span>
                     </div>
-                    <h3 class="fw-semibold mb-1">{{ $leaderboard[2]->name }}</h3>
-                    <p class="text-muted mb-2">{{ number_format($leaderboard[2]->points) }} poin</p>
+                    <h3 class="fw-semibold mb-1">{{ $podium[2]->nama_lengkap }}</h3>
+                    <p class="text-muted mb-2">{{ number_format($podium[2]->points) }} point</p>
                     <div class="badge bg-info bg-opacity-10 text-info" style="color: #9a3412 !important;">
                         Peringkat 3
                     </div>
@@ -65,8 +65,8 @@
                 <i class="fas fa-trophy fs-1"></i>
             </div>
             <h2 class="fw-bold mb-2">Pemimpin Saat Ini</h2>
-            <p class="text-warning fs-4 fw-semibold mb-1" style="color: #f97316 !important;">{{ $leaderboard[0]->name }}</p>
-            <p class="text-muted fs-5">{{ number_format($leaderboard[0]->points) }} poin</p>
+            <p class="text-warning fs-4 fw-semibold mb-1" style="color: #f97316 !important;">{{ $leaderboard[0]->nama_lengkap }}</p>
+            <p class="text-muted fs-5">{{ number_format($leaderboard[0]->points) }} point</p>
         </div>
         @endif
 
@@ -76,30 +76,33 @@
                 <h2 class="fw-semibold mb-0">Peringkat Lengkap</h2>
             </div>
             <div class="list-group list-group-flush">
+                @php
+                    $startNumber = ($leaderboard->currentPage() - 1) * $leaderboard->perPage() + 1;
+                @endphp
                 @forelse($leaderboard as $index => $participant)
                 <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
                     <div class="d-flex align-items-center">
-                        @if($index < 3)
+                        @if($startNumber + $index <= 3)
                         <div class="rounded-circle d-flex align-items-center justify-content-center me-3 
                             @if($index === 0) bg-warning text-white @endif
                             @if($index === 1) bg-secondary text-white @endif
                             @if($index === 2) bg-info text-white @endif" 
-                            style="width: 40px; height: 40px; @if($index === 2) background-color: #fdba74 !important; @endif">
-                            <span class="fw-bold">{{ $index + 1 }}</span>
+                            style="width: 40px; height: 40px; @if($startNumber + $index === 3) background-color: #fdba74 !important; @endif">
+                            <span class="fw-bold">{{ $startNumber + $index }}</span>
                         </div>
                         @else
                         <div class="rounded-circle bg-light d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
-                            <span class="fw-bold text-muted">{{ $index + 1 }}</span>
+                            <span class="fw-bold">{{ $startNumber + $index }}</span>
                         </div>
                         @endif
                         <div>
-                            <h5 class="mb-0">{{ $participant->name }}</h5>
+                            <h5 class="mb-0">{{ $participant->nama_lengkap }}</h5>
                             <small class="text-muted">Peserta Survey</small>
                         </div>
                     </div>
                     <div class="text-end">
                         <span class="fw-bold d-block">{{ number_format($participant->points) }}</span>
-                        <small class="text-muted">poin</small>
+                        <small class="text-muted">point</small>
                     </div>
                 </div>
                 @empty
@@ -111,6 +114,9 @@
                 @endforelse
             </div>
         </div>
+        <div class="mt-4 d-flex justify-content-center">
+        {{ $leaderboard->links() }}
+         </div>
 
         <!-- Stats Cards -->
         <div class="row g-4 mt-4">
@@ -122,7 +128,7 @@
                         </div>
                         <div>
                             <p class="text-muted mb-0">Total Peserta</p>
-                            <h3 class="fw-bold mb-0">{{ count($leaderboard) }}</h3>
+                            <h3 class="fw-bold mb-0">{{ $totalPeserta}}</h3>
                         </div>
                     </div>
                 </div>
@@ -135,8 +141,8 @@
                             <i class="fas fa-crown text-danger"></i>
                         </div>
                         <div>
-                            <p class="text-muted mb-0">Poin Tertinggi</p>
-                            <h3 class="fw-bold mb-0">{{ count($leaderboard) > 0 ? number_format($leaderboard[0]->points) : 0 }}</h3>
+                            <p class="text-muted mb-0">Point Tertinggi</p>
+                            <h3 class="fw-bold mb-0">{{ number_format($pointTertinggi) }}</h3>
                         </div>
                     </div>
                 </div>
@@ -150,7 +156,7 @@
                         </div>
                         <div>
                             <p class="text-muted mb-0">Rata-rata Poin</p>
-                            <h3 class="fw-bold mb-0">{{ count($leaderboard) > 0 ? number_format($leaderboard->avg('points')) : 0 }}</h3>
+                            <h3 class="fw-bold mb-0">{{  number_format($rataRataPoin)}}</h3>
                         </div>
                     </div>
                 </div>
