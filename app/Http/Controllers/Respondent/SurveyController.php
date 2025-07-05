@@ -61,9 +61,10 @@ class SurveyController extends Controller
 
         abort_if(!$insert, 403, 'Bad request');
 
-           
+
         $user = \App\Models\User::find(Auth::id());
         $user->points += 200;
+        $user->available_points += 200;
         $user->save();
 
         $survey = Survey::select(['id', 'title', 'slug'])
@@ -147,21 +148,21 @@ class SurveyController extends Controller
         $urlOrigin = $request->url_origin;
         $signature = $request->signature;
         $url = $urlOrigin . $signature;
-        
+
         $checkUrl = Survey::where('signature', $signature)->first();
 
         // Jika url telah digunakan
-        if( $checkUrl ) {   
+        if ($checkUrl) {
             return back()->with(session()->flash('error', 'Url telah digunakan'));
-        } 
-        
+        }
+
         // $request->validate([
         //     'link-input' => 'unique'
         // ]);
         Survey::where('id', $code)->update(['shareable_link' => $url, 'signature' => $signature]);
         return back()->with(session()->flash('success', 'Tautan berhasil diubah'));
     }
-    
+
 
     public function filter()
     {

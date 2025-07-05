@@ -229,12 +229,13 @@ Route::middleware(['auth', 'role:respondent', 'verified'])->group(function () {
         ->group(function () {
             Route::get('survey/history', SurveyHistoryController::class)->name('survey.history');
             Route::view('/survey/change-point', 'survey.change-point')->name('survey.change-point');
+            Route::post('/survey/exchange-point', [SurveyHistoryController::class, 'exchange'])->name('survey.exchange-point');
             Route::view('/survey/pre-survey', 'survey.pre-survey')->name('survey.pre-survey');
             Route::view('/survey/pre-soal', 'survey.pre-soal');
             Route::view('/survey/pre-soall', 'survey.pre-soall');
-            
+
             Route::get('/survey/leaderboard', [
-                LeaderboardController::class, 
+                LeaderboardController::class,
                 'index'
             ])->name('survey.leaderboard');
             Route::get('dashboard', [

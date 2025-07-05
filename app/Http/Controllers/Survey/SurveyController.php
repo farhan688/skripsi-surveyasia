@@ -30,6 +30,7 @@ use PDF;
 
 class SurveyController extends Controller
 {
+    
     /**
      * used to set current link
      */

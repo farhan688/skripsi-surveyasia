@@ -126,6 +126,13 @@ class AnswerSurveyAction
         $survey = Survey::where(['id' => $request->survey_id])->first();
         $survey->increment('attempted');
 
+        // Add reward to user's balance
+        $user->reward_balance += $survey->reward_point;
+        // Add fixed points
+        // $user->points += 200;
+        // $user->available_points += 200;
+        $user->save();
+
         return true;
     }
 }
