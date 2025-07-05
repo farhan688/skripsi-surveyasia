@@ -10,17 +10,18 @@ class LeaderboardController extends Controller
     public function index()
     {
         // Ambil 3 teratas untuk podium
-        $podium = User::where('role_id', 3)->orderBy('points', 'desc')->take(3)->get();
+        $podium = User::where('role_id', 3)->where('points', '>', 0)->orderBy('points', 'desc')->take(3)->get();
 
         // Ambil selain 3 teratas untuk leaderboard (mulai dari urutan ke-4)
         $leaderboard = User::where('role_id', 3)
+            ->where('points', '>', 0)
             ->orderBy('points', 'desc')
             ->skip(3)
             ->paginate(20);
         
-        $totalPeserta = User::where('role_id', 3)->count();
-        $pointTertinggi = User::where('role_id', 3)->max('points');
-        $rataRataPoin = User::where('role_id', 3)->avg('points');
+        $totalPeserta = User::where('role_id', 3)->where('points', '>', 0)->count();
+        $pointTertinggi = User::where('role_id', 3)->where('points', '>', 0)->max('points');
+        $rataRataPoin = User::where('role_id', 3)->where('points', '>', 0)->avg('points');
 
         return view('survey.leaderboard', compact('podium', 'leaderboard', 'totalPeserta', 'pointTertinggi', 'rataRataPoin'));
     }

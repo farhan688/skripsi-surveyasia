@@ -31,7 +31,7 @@
 
                 <!-- Leaderboard Content -->
                 <div class="container py-5">
-                    @if (count($leaderboard) >= 3)
+                    @if (count($podium) >= 3)
                         <!-- Top 3 Podium -->
                         <div class="row g-4 mb-5">
                             <!-- 2nd Place -->
