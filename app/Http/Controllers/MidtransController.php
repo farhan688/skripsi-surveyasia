@@ -7,6 +7,7 @@ use Midtrans\Config;
 use Midtrans\Notification;
 use App\Models\Transaction;
 use App\Models\CategorySubcriptions;
+use App\Models\User;
 
 class MidtransController extends Controller
 {
@@ -26,8 +27,7 @@ class MidtransController extends Controller
         $fraud  = $notification->fraud_status;
 
         // find Transaction by $order_id
-        $transaction = Transaction::with('sub')->findorfail($order_id);
-        $userSub = $transaction->sub->where('id', $transaction->user_subscription_id)->first();
+        $transaction = Transaction::findorfail($order_id);
 
         // get time now
         $carbon = Carbon::now();
@@ -40,132 +40,146 @@ class MidtransController extends Controller
                     echo "Transaction order_id: " . $notification->order_id . " is challenged by FDS";
                 } else {
                     $transaction->payment_status = 2;
-                    if ($transaction->title == 'Make Your Own') {
-                        $userSub->update([
-                            'subscription_id' => 2,
-                            'category_id' => 2,
-                            'expired_at' => $carbon->addMonth(),
-                        ]);
-                    } elseif ($transaction->title == 'Contact Us') {
-                        $userSub->update([
-                            'subscription_id' => 2,
-                            'category_id' => 3,
-                            'expired_at' => $carbon->addMonth(),
-                        ]);
-                    } elseif ($transaction->title == 'Basic') {
-                        $userSub->update([
-                            'subscription_id' => 3,
-                            'category_id' => 4,
-                            'expired_at' => $carbon->addMonth(),
-                        ]);
-                    } elseif ($transaction->title == 'Essential Annual') {
-                        $userSub->update([
-                            'subscription_id' => 3,
-                            'category_id' => 5,
-                            'expired_at' => $carbon->addMonth(),
-                        ]);
-                    } elseif ($transaction->title == 'Plus Annual') {
-                        $userSub->update([
-                            'subscription_id' => 3,
-                            'category_id' => 6,
-                            'expired_at' => $carbon->addMonth(),
-                        ]);
-                    } elseif ($transaction->title == 'Essential Annual Yearly') {
-                        $userSub->update([
-                            'subscription_id' => 3,
-                            'category_id' => 7,
-                            'expired_at' => $carbon->addYear(),
-                        ]);
-                    } elseif ($transaction->title == 'Plus Annual Yearly') {
-                        $userSub->update([
-                            'subscription_id' => 3,
-                            'category_id' => 8,
-                            'expired_at' => $carbon->addYear(),
-                        ]);
-                    } elseif ($transaction->title == 'Advantage') {
-                        $userSub->update([
-                            'subscription_id' => 4,
-                            'category_id' => 9,
-                            'expired_at' => $carbon->addYear(),
-                        ]);
-                    } elseif ($transaction->title == 'Enterprise') {
-                        $userSub->update([
-                            'subscription_id' => 4,
-                            'category_id' => 10,
-                            'expired_at' => $carbon->addYear(),
-                        ]);
-                    } elseif ($transaction->title == 'Corporate') {
-                        $userSub->update([
-                            'subscription_id' => 4,
-                            'category_id' => 11,
-                            'expired_at' => $carbon->addYear(),
-                        ]);
+                    if ($transaction->title == 'Top Up Saldo') {
+                        $user = $transaction->user;
+                        $user->reward_balance += $transaction->total;
+                        $user->save();
+                    } else {
+                        $userSub = $transaction->sub->where('id', $transaction->user_subscription_id)->first();
+                        if ($transaction->title == 'Make Your Own') {
+                            $userSub->update([
+                                'subscription_id' => 2,
+                                'category_id' => 2,
+                                'expired_at' => $carbon->addMonth(),
+                            ]);
+                        } elseif ($transaction->title == 'Contact Us') {
+                            $userSub->update([
+                                'subscription_id' => 2,
+                                'category_id' => 3,
+                                'expired_at' => $carbon->addMonth(),
+                            ]);
+                        } elseif ($transaction->title == 'Basic') {
+                            $userSub->update([
+                                'subscription_id' => 3,
+                                'category_id' => 4,
+                                'expired_at' => $carbon->addMonth(),
+                            ]);
+                        } elseif ($transaction->title == 'Essential Annual') {
+                            $userSub->update([
+                                'subscription_id' => 3,
+                                'category_id' => 5,
+                                'expired_at' => $carbon->addMonth(),
+                            ]);
+                        } elseif ($transaction->title == 'Plus Annual') {
+                            $userSub->update([
+                                'subscription_id' => 3,
+                                'category_id' => 6,
+                                'expired_at' => $carbon->addMonth(),
+                            ]);
+                        } elseif ($transaction->title == 'Essential Annual Yearly') {
+                            $userSub->update([
+                                'subscription_id' => 3,
+                                'category_id' => 7,
+                                'expired_at' => $carbon->addYear(),
+                            ]);
+                        } elseif ($transaction->title == 'Plus Annual Yearly') {
+                            $userSub->update([
+                                'subscription_id' => 3,
+                                'category_id' => 8,
+                                'expired_at' => $carbon->addYear(),
+                            ]);
+                        } elseif ($transaction->title == 'Advantage') {
+                            $userSub->update([
+                                'subscription_id' => 4,
+                                'category_id' => 9,
+                                'expired_at' => $carbon->addYear(),
+                            ]);
+                        } elseif ($transaction->title == 'Enterprise') {
+                            $userSub->update([
+                                'subscription_id' => 4,
+                                'category_id' => 10,
+                                'expired_at' => $carbon->addYear(),
+                            ]);
+                        } elseif ($transaction->title == 'Corporate') {
+                            $userSub->update([
+                                'subscription_id' => 4,
+                                'category_id' => 11,
+                                'expired_at' => $carbon->addYear(),
+                            ]);
+                        }
                     }
                     echo "Transaction order_id: " . $notification->order_id . " successfully captured using " . $type;
                 }
             }
         } elseif ($status == 'settlement') {
             $transaction->payment_status = 2;
-            if ($transaction->title == 'Make Your Own') {
-                $userSub->update([
-                    'subscription_id' => 2,
-                    'category_id' => 2,
-                    'expired_at' => $carbon->addMonth(),
-                ]);
-            } elseif ($transaction->title == 'Contact Us') {
-                $userSub->update([
-                    'subscription_id' => 2,
-                    'category_id' => 3,
-                    'expired_at' => $carbon->addMonth(),
-                ]);
-            } elseif ($transaction->title == 'Basic') {
-                $userSub->update([
-                    'subscription_id' => 3,
-                    'category_id' => 4,
-                    'expired_at' => $carbon->addMonth(),
-                ]);
-            } elseif ($transaction->title == 'Essential Annual') {
-                $userSub->update([
-                    'subscription_id' => 3,
-                    'category_id' => 5,
-                    'expired_at' => $carbon->addMonth(),
-                ]);
-            } elseif ($transaction->title == 'Plus Annual') {
-                $userSub->update([
-                    'subscription_id' => 3,
-                    'category_id' => 6,
-                    'expired_at' => $carbon->addMonth(),
-                ]);
-            } elseif ($transaction->title == 'Essential Annual Yearly') {
-                $userSub->update([
-                    'subscription_id' => 3,
-                    'category_id' => 7,
-                    'expired_at' => $carbon->addYear(),
-                ]);
-            } elseif ($transaction->title == 'Plus Annual Yearly') {
-                $userSub->update([
-                    'subscription_id' => 3,
-                    'category_id' => 8,
-                    'expired_at' => $carbon->addYear(),
-                ]);
-            } elseif ($transaction->title == 'Advantage') {
-                $userSub->update([
-                    'subscription_id' => 4,
-                    'category_id' => 9,
-                    'expired_at' => $carbon->addYear(),
-                ]);
-            } elseif ($transaction->title == 'Enterprise') {
-                $userSub->update([
-                    'subscription_id' => 4,
-                    'category_id' => 10,
-                    'expired_at' => $carbon->addYear(),
-                ]);
-            } elseif ($transaction->title == 'Corporate') {
-                $userSub->update([
-                    'subscription_id' => 4,
-                    'category_id' => 11,
-                    'expired_at' => $carbon->addYear(),
-                ]);
+            if ($transaction->title == 'Top Up Saldo') {
+                $user = $transaction->user;
+                $user->reward_balance += $transaction->total;
+                $user->save();
+            } else {
+                $userSub = $transaction->sub->where('id', $transaction->user_subscription_id)->first();
+                if ($transaction->title == 'Make Your Own') {
+                    $userSub->update([
+                        'subscription_id' => 2,
+                        'category_id' => 2,
+                        'expired_at' => $carbon->addMonth(),
+                    ]);
+                } elseif ($transaction->title == 'Contact Us') {
+                    $userSub->update([
+                        'subscription_id' => 2,
+                        'category_id' => 3,
+                        'expired_at' => $carbon->addMonth(),
+                    ]);
+                } elseif ($transaction->title == 'Basic') {
+                    $userSub->update([
+                        'subscription_id' => 3,
+                        'category_id' => 4,
+                        'expired_at' => $carbon->addMonth(),
+                    ]);
+                } elseif ($transaction->title == 'Essential Annual') {
+                    $userSub->update([
+                        'subscription_id' => 3,
+                        'category_id' => 5,
+                        'expired_at' => $carbon->addMonth(),
+                    ]);
+                } elseif ($transaction->title == 'Plus Annual') {
+                    $userSub->update([
+                        'subscription_id' => 3,
+                        'category_id' => 6,
+                        'expired_at' => $carbon->addMonth(),
+                    ]);
+                } elseif ($transaction->title == 'Essential Annual Yearly') {
+                    $userSub->update([
+                        'subscription_id' => 3,
+                        'category_id' => 7,
+                        'expired_at' => $carbon->addYear(),
+                    ]);
+                } elseif ($transaction->title == 'Plus Annual Yearly') {
+                    $userSub->update([
+                        'subscription_id' => 3,
+                        'category_id' => 8,
+                        'expired_at' => $carbon->addYear(),
+                    ]);
+                } elseif ($transaction->title == 'Advantage') {
+                    $userSub->update([
+                        'subscription_id' => 4,
+                        'category_id' => 9,
+                        'expired_at' => $carbon->addYear(),
+                    ]);
+                } elseif ($transaction->title == 'Enterprise') {
+                    $userSub->update([
+                        'subscription_id' => 4,
+                        'category_id' => 10,
+                        'expired_at' => $carbon->addYear(),
+                    ]);
+                } elseif ($transaction->title == 'Corporate') {
+                    $userSub->update([
+                        'subscription_id' => 4,
+                        'category_id' => 11,
+                        'expired_at' => $carbon->addYear(),
+                    ]);
+                }
             }
             echo "Transaction order_id: " . $notification->order_id . " successfully transfered using " . $type;
         } elseif ($status == 'pending') {

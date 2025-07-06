@@ -20,8 +20,9 @@ class CreateSurveyAction
 
         $user = Auth::user();
         $price = $request->price;
+        $totalReward = $request->reward_point * $request->max_attempt;
 
-        if ($user->reward_balance < $price) {
+        if ($user->reward_balance < ($price + $totalReward)) {
             return redirect()->back()->withErrors('Saldo tidak mencukupi');
         }
 
@@ -40,7 +41,7 @@ class CreateSurveyAction
             'price' => $price
         ]);
 
-        $user->reward_balance -= $price;
+        $user->reward_balance -= ($price + $totalReward);
         $user->save();
 
         if (!$survey) {

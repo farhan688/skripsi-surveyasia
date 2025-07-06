@@ -25,7 +25,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle fw-semibold" href="#" id="navbarDropdown" role="button"
             data-bs-toggle="dropdown" aria-expanded="false">
-            Hai, {{ Auth::user()->nama_lengkap }}
+            Hai, {{ Auth::user()->nama_lengkap }} <img src="{{ Auth::user()->badge }}" alt="badge" class="ms-2" width="20">
           </a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="/"><i class="fas fa-home fa-fw"></i> Beranda</a></li>

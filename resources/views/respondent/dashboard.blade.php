@@ -68,7 +68,10 @@
                                 @endif
                                 <div class="col">
                                     <p class="fs-14px m-0">Selamat Datang!</p>
-                                    <p class="fw-semibold m-0">{{ Auth::user()->nama_lengkap }}</p>
+                                    <div class="d-flex align-items-center">
+                                        <p class="fw-semibold m-0">{{ Auth::user()->nama_lengkap }}</p>
+                                        <img src="{{ Auth::user()->badge }}" alt="badge" class="ms-2" width="20">
+                                    </div>
                                 </div>
                             </div>
                         </div>

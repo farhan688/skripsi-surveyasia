@@ -88,6 +88,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
         '/profile/{id}/delete',
         'App\Http\Controllers\UsersProfileController@destroy'
     )->name('user-profile.delete');
+
+    Route::get('balance', [App\Http\Controllers\BalanceController::class, 'index'])->name('balance.index');
+    Route::post('balance/topup', [App\Http\Controllers\BalanceController::class, 'topup'])->name('balance.topup');
 });
 
 /* Screening routes */

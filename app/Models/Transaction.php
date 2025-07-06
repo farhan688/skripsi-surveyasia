@@ -17,6 +17,7 @@ class Transaction extends Model
 
     protected $fillable = [
         'user_subscription_id',
+        'user_id',
         'order_id',
         'price',
         'title',
@@ -24,6 +25,11 @@ class Transaction extends Model
         'expired_at',
         'total',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
     public function detail()
     {

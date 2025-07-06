@@ -94,7 +94,10 @@
                     </span>
                 </div>
                 <div class="col">
-                    <h3 class="fw-semibold">{{ $user->nama_lengkap }}</h3>
+                    <div class="d-flex align-items-center">
+                        <h3 class="fw-semibold">{{ $user->nama_lengkap }}</h3>
+                        <img src="{{ Auth::user()->badge }}" alt="badge" class="ms-2" width="30">
+                    </div>
                     @if (Auth::user()->subscription_id != null)
                     <p>Show subscription name</p>
                     @elseif(Auth::user()->subscription_id == 1)
