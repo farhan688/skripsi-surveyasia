@@ -18,6 +18,13 @@ class CreateSurveyAction
         $reward = $request->reward_point == null ? 0 : $request->reward_point;
         $category = $request->category_id;
 
+        $user = Auth::user();
+        $price = $request->price;
+
+        if ($user->reward_balance < $price) {
+            return redirect()->back()->withErrors('Saldo tidak mencukupi');
+        }
+
         $survey = Survey::create([
             'title' => $request->title,
             'description' => $request->description,
@@ -29,8 +36,12 @@ class CreateSurveyAction
             'max_attempt' => $maxAttempt,
             'reason_deny' => null,
             'estimate_completion' => $estimateCompletion,
-            'reward_point' => $reward
+            'reward_point' => $reward,
+            'price' => $price
         ]);
+
+        $user->reward_balance -= $price;
+        $user->save();
 
         if (!$survey) {
             return redirect()->back()->withErrors('Internal Server Error');

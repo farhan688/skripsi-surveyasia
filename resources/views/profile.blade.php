@@ -30,6 +30,9 @@
                 <a href="{{ route('researcher.transaction.history') }}" class="link-dark text-decoration-none">
                     <p class="mt-3 ms-3"><i class="fas fa-file-invoice-dollar fa-fw"></i> Riwayat Transaksi</p>
                 </a>
+                <a href="#" class="link-dark text-decoration-none">
+                    <p class="mt-3 ms-3"><i class="fas fa-wallet fa-fw"></i> Saldo</p>
+                </a>
                 <a href="{{ route('researcher.tutorial.index') }}" class="link-dark text-decoration-none">
                     <p class="mt-3 ms-3"><i class="fas fa-tv fa-fw"></i> Tutorial</p>
                 </a>
@@ -51,8 +54,11 @@
 
         {{-- User Profile --}}
         <div class="col-lg-10 shadow pt-4 pb-5 px-5" style="border-radius: 16px; position: relative;">
-            {{-- Badge Poin di pojok kanan atas --}}
+            {{-- Badge Poin & Saldo di pojok kanan atas --}}
             <div class="position-absolute top-0 end-0 mt-3 me-3">
+                <span class="badge bg-success text-white fs-6 shadow me-2">
+                    <i class="fas fa-wallet"></i> Rp{{ number_format(Auth::user()->reward_balance ?? 0, 0, ',', '.') }}
+                </span>
                 <span class="badge bg-warning text-dark fs-6 shadow">
                     <i class="fas fa-coins"></i> {{ Auth::user()->points ?? 0 }} Point
                 </span>
@@ -94,7 +100,10 @@
                     </span>
                 </div>
                 <div class="col">
-                    <h3 class="fw-semibold">{{ $user->nama_lengkap }}</h3>
+                    <div class="d-flex align-items-center">
+                        <h3 class="fw-semibold">{{ $user->nama_lengkap }}</h3>
+                        <img src="{{ Auth::user()->badge }}" alt="badge" class="ms-2" width="30">
+                    </div>
                     @if ($userSubsId->category_id == 1)
                     <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-3"> {{
                         $subscription[0]->title }} Account</p>
@@ -191,6 +200,16 @@
                 </div>
                 <div class="col">
                     <p class="fw-semibold">{{ $user->profile->job ?? $user->job }}</p>
+                </div>
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <p>Saldo</p>
+                </div>
+                <div class="col">
+                    <p class="fw-semibold">Rp{{ number_format(Auth::user()->reward_balance ?? 0, 0, ',', '.') }}</p>
                 </div>
                 <hr>
             </div>
