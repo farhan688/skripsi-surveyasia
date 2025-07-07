@@ -39,16 +39,16 @@
                   Penyelesaian
                   {{-- <i class="fa fa-question-circle" aria-hidden="true"></i></label> --}}
                 <input type="number" class="form-control" required max="20" min="1" placeholder="dalam satuan menit"
-                  name="estimate_completion">
+                  name="estimate_completion" id="estimate_completion">
                 <div class="form-text"><span class="text-orange">Tips!</span> Disarankan
                   tidak melebihi 10 menit</div>
                 <div class="invalid-feedback">Harap masukkan <span class="fw-bold">Estimasi Penyelesaian</span> survey!
                 </div>
               </div>
               <div class="col-md-4 mt-3 mt-md-0">
-                <label for="" class="form-label">Maksimum Responden
+                <label for="max_attempt" class="form-label">Maksimum Responden
                   {{-- <span><i class="fa fa-question-circle" aria-hidden="true"></i></span></label> --}}
-                <input name="max_attempt" type="number" class="form-control" min="1" placeholder="40"
+                <input name="max_attempt" type="number" class="form-control" min="1" placeholder="40" id="max_attempt" required
                   @if($user->subscription != null && $user->subscription->id == 1) max="40" @endif>
                 @if ($user->subscription != null && $user->subscription->id == 1)
                 <div class="form-text">Maksimal 40 respondent untuk
@@ -60,12 +60,14 @@
                 @endif
               </div>
               <div class="col-md-4 mt-3 mt-md-0">
-                <label for="" class="form-label">Jumlah Reward
+                <label for="reward_point" class="form-label">Jumlah Reward
                   {{-- <span><i class="fa fa-question-circle" aria-hidden="true"></i></span></label> --}}
-                <input name="reward_point" type="number" class="form-control" placeholder="0">
+                <input name="reward_point" type="number" class="form-control" placeholder="0" id="reward_point" required>
+                <div class="invalid-feedback">Harap masukkan <span class="fw-bold">Jumlah Reward</span> survey!</div>
               </div>
             </div>
           </div>
+          
           <div class="mb-3">
             <label class="form-label">Pengaturan Survey</label>
             <div class="row">
@@ -94,3 +96,27 @@
     </div>
   </div>
 </div>
+
+@if ($errors->any())
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var addSurveyModal = new bootstrap.Modal(document.getElementById('addSurveyModal'));
+        addSurveyModal.show();
+
+        @foreach ($errors->all() as $error)
+            @php
+                $field = Str::before($error, ' ');
+                $field = Str::snake($field);
+            @endphp
+            var inputElement = document.getElementById('{{ $field }}');
+            if (inputElement) {
+                inputElement.classList.add('is-invalid');
+                var feedbackElement = inputElement.nextElementSibling;
+                if (feedbackElement && feedbackElement.classList.contains('invalid-feedback')) {
+                    feedbackElement.innerHTML = '{{ $error }}';
+                }
+            }
+        @endforeach
+    });
+</script>
+@endif

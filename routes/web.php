@@ -223,7 +223,7 @@ Route::middleware(['auth', 'role:researcher', 'verified'])->group(function () {
             Route::get('checkout/{id}', [TransactionController::class, 'checkoutTransaction'])->name('transaction.checkoutTransaction');
             Route::get('transaction-history', [TransactionController::class, 'history'])->name('transaction.history');
         });
-});
+}); 
 
 // Respondent Routes
 Route::middleware(['auth', 'role:respondent', 'verified'])->group(function () {

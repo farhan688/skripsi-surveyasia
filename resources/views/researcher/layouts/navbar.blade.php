@@ -163,6 +163,9 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     {{ Auth::user()->nama_lengkap }}
+                    @if (Auth::user()->role_id == 3)
+                    <img src="{{ Auth::user()->badge }}" alt="badge" class="ms-2" width="20">
+                    @endif
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="{{ route('user-profile') }}"><i class="fas fa-user fa-fw"></i>

@@ -78,11 +78,13 @@
                     @endif
 
                     {{-- Tambahkan badge poin --}}
+                    @if (Auth::user()->role_id == 3)
                     <div class="ms-3">
                         <span class="badge bg-warning text-dark fs-6">
                             <i class="fas fa-coins"></i> {{ Auth::user()->points ?? 0 }} Poin
                         </span>
                     </div>
+                    @endif
                     <span class="d-flex">
                         <a href="{{ route('edit-profile') }}" class="link-orange text-decoration-none">Change</a>
                         <p class="text-orange m-0 mx-1">|</p>
@@ -96,7 +98,9 @@
                 <div class="col">
                     <div class="d-flex align-items-center">
                         <h3 class="fw-semibold">{{ $user->nama_lengkap }}</h3>
+                        @if (Auth::user()->role_id == 3)
                         <img src="{{ Auth::user()->badge }}" alt="badge" class="ms-2" width="30">
+                        @endif
                     </div>
                     @if (Auth::user()->subscription_id != null)
                     <p>Show subscription name</p>

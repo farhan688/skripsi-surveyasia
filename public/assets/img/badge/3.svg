@@ -1,0 +1,18 @@
+<svg width="120" height="140" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <radialGradient id="gemGrad" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+      <stop offset="0%" stop-color="#FFFAF0"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </radialGradient>
+  </defs>
+  <path d="M10,40 L40,40 L50,10 L70,10 L80,40 L110,40 L90,80 L75,120 L45,120 L30,80 Z" 
+        fill="url(#goldGrad)" stroke="#8B7500" stroke-width="2"/>
+  <circle cx="60" cy="50" r="12" fill="url(#gemGrad)" stroke="#8B7500" stroke-width="1"/>
+  <circle cx="35" cy="70" r="8" fill="url(#gemGrad)" stroke="#8B7500" stroke-width="1"/>
+  <circle cx="85" cy="70" r="8" fill="url(#gemGrad)" stroke="#8B7500" stroke-width="1"/>
+</svg>

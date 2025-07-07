@@ -199,19 +199,4 @@ class MidtransController extends Controller
         // save transaction
         $transaction->save();
     }
-
-    public function finishRedirect()
-    {
-        return view('researcher.pricings.success');
-    }
-
-    public function unfinishRedirect()
-    {
-        return view('researcher.pricings.unfinish');
-    }
-
-    public function errorRedirect()
-    {
-        return view('researcher.pricings.error');
-    }
 }

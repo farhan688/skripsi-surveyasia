@@ -43,12 +43,8 @@ class SurveyController extends Controller
      */
     public function showUserSurvey()
     {
-        // Conventional
-        // $user = Auth::user();
-        // $surveys = Survey::where(['creator_id' => $user->id])->get();
-
         // Relational
-        $surveys = Auth::user()->surveys;
+        $surveys = Auth::user()->surveys()->whereIn('status', ['active', 'pending', 'reject', 'draft'])->get();
         $user = Auth::user();
 
         // Pricing Modal

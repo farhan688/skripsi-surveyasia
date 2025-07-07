@@ -6,6 +6,7 @@ use App\Http\Requests\CreateSurveyRequest;
 use App\Models\Survey;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Log;
 
 class CreateSurveyAction
 {
@@ -19,12 +20,10 @@ class CreateSurveyAction
         $category = $request->category_id;
 
         $user = Auth::user();
-        $price = $request->price;
-        $totalReward = $request->reward_point * $request->max_attempt;
 
-        if ($user->reward_balance < ($price + $totalReward)) {
-            return redirect()->back()->withErrors('Saldo tidak mencukupi');
-        }
+        Log::info('CreateSurveyAction: User ID ' . $user->id . ', Reward Balance: ' . $user->reward_balance);
+
+        // No price deduction at survey creation
 
         $survey = Survey::create([
             'title' => $request->title,
@@ -38,16 +37,15 @@ class CreateSurveyAction
             'reason_deny' => null,
             'estimate_completion' => $estimateCompletion,
             'reward_point' => $reward,
-            'price' => $price
+            'status' => 'pending'
         ]);
 
-        $user->reward_balance -= ($price + $totalReward);
-        $user->save();
-
         if (!$survey) {
+            Log::error('CreateSurveyAction: Gagal membuat survei untuk User ID ' . $user->id);
             return redirect()->back()->withErrors('Internal Server Error');
         }
 
+        Log::info('CreateSurveyAction: Survei berhasil dibuat dengan ID ' . $survey->id . ' untuk User ID ' . $user->id);
         return redirect()->back()->with(['surveys.success', 'Survey Created!']);
     }
 }

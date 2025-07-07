@@ -30,7 +30,7 @@
                 <a href="{{ route('researcher.transaction.history') }}" class="link-dark text-decoration-none">
                     <p class="mt-3 ms-3"><i class="fas fa-file-invoice-dollar fa-fw"></i> Riwayat Transaksi</p>
                 </a>
-                <a href="#" class="link-dark text-decoration-none">
+                <a href="{{ route('balance.index') }}" class="link-dark text-decoration-none">
                     <p class="mt-3 ms-3"><i class="fas fa-wallet fa-fw"></i> Saldo</p>
                 </a>
                 <a href="{{ route('researcher.tutorial.index') }}" class="link-dark text-decoration-none">
@@ -56,12 +56,18 @@
         <div class="col-lg-10 shadow pt-4 pb-5 px-5" style="border-radius: 16px; position: relative;">
             {{-- Badge Poin & Saldo di pojok kanan atas --}}
             <div class="position-absolute top-0 end-0 mt-3 me-3">
+                @if (Auth::user()->role_id == 3)
                 <span class="badge bg-success text-white fs-6 shadow me-2">
                     <i class="fas fa-wallet"></i> Rp{{ number_format(Auth::user()->reward_balance ?? 0, 0, ',', '.') }}
                 </span>
                 <span class="badge bg-warning text-dark fs-6 shadow">
                     <i class="fas fa-coins"></i> {{ Auth::user()->points ?? 0 }} Point
                 </span>
+                @else
+                <span class="badge bg-success text-white fs-6 shadow me-2">
+                    <i class="fas fa-wallet"></i> Rp{{ number_format(Auth::user()->reward_balance ?? 0, 0, ',', '.') }}
+                </span>
+                @endif
             </div>
             {{-- User Profile Content --}}
             @if (session('success'))
@@ -102,55 +108,58 @@
                 <div class="col">
                     <div class="d-flex align-items-center">
                         <h3 class="fw-semibold">{{ $user->nama_lengkap }}</h3>
+                        @if (Auth::user()->role_id == 3)
                         <img src="{{ Auth::user()->badge }}" alt="badge" class="ms-2" width="30">
+                        @endif
                     </div>
-                    @if ($userSubsId->category_id == 1)
-                    <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-3"> {{
-                        $subscription[0]->title }} Account</p>
-                    <br>
-                    <a href="{{ route('pricing') }}" class="btn btn-orange btn-sm radius-default"
-                        role="button">Upgrade</a>
-                    @elseif($userSubsId->category_id == 2)
-                    <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> Pay Per Survey
-                        Account
-                    </p>
-                    @elseif ($userSubsId->category_id == 3)
-                    <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> Pay Per Survey
-                        Account
-                    </p>
-                    @elseif ($userSubsId->category_id == 4)
-                    <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
-                        $subscription[3]->title }} Account</p>
-                    @elseif ($userSubsId->category_id == 5)
-                    <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
-                        $subscription[4]->title }} Account</p>
-                    @elseif ($userSubsId->category_id == 6)
-                    <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
-                        $subscription[5]->title }} Account</p>
-                    @elseif ($userSubsId->category_id == 7)
-                    <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
-                        $subscription[6]->title }} Account</p>
-                    @elseif ($userSubsId->category_id == 8)
-                    <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
-                        $subscription[7]->title }} Account</p>
-                    @elseif ($userSubsId->category_id == 9)
-                    <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
-                        $subscription[8]->title }} Account</p>
-                    @elseif ($userSubsId->category_id == 10)
-                    <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
-                        $subscription[9]->title }} Account</p>
-                    @elseif ($userSubsId->category_id == 11)
-                    <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
-                        $subscription[10]->title }} Account</p>
-                    @else
-                    <p class="text-white fw-normal badge bg-dark rounded-pill mb-1"> {{ $subscription->title
-                        }}Account</p>
+                    @if (Auth::user()->role_id != 3)
+                        @if ($userSubsId->category_id == 1)
+                        <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-3"> {{
+                            $subscription[0]->title }} Account</p>
+                        <br>
+                        <a href="{{ route('pricing') }}" class="btn btn-orange btn-sm radius-default"
+                            role="button">Upgrade</a>
+                        @elseif($userSubsId->category_id == 2)
+                        <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> Pay Per Survey
+                            Account
+                        </p>
+                        @elseif ($userSubsId->category_id == 3)
+                        <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> Pay Per Survey
+                            Account
+                        </p>
+                        @elseif ($userSubsId->category_id == 4)
+                        <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
+                            $subscription[3]->title }} Account</p>
+                        @elseif ($userSubsId->category_id == 5)
+                        <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
+                            $subscription[4]->title }} Account</p>
+                        @elseif ($userSubsId->category_id == 6)
+                        <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
+                            $subscription[5]->title }} Account</p>
+                        @elseif ($userSubsId->category_id == 7)
+                        <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
+                            $subscription[6]->title }} Account</p>
+                        @elseif ($userSubsId->category_id == 8)
+                        <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
+                            $subscription[7]->title }} Account</p>
+                        @elseif ($userSubsId->category_id == 9)
+                        <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
+                            $subscription[8]->title }} Account</p>
+                        @elseif ($userSubsId->category_id == 10)
+                        <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
+                            $subscription[9]->title }} Account</p>
+                        @elseif ($userSubsId->category_id == 11)
+                        <p class="text-dark fw-normal badge bg-warning rounded-pill text-white mb-1"> {{
+                            $subscription[10]->title }} Account</p>
+                        @else
+                        <p class="text-white fw-normal badge bg-dark rounded-pill mb-1"> {{ $subscription->title
+                            }}Account</p>
+                        @endif
+                        @if ($userSubsId->category_id > 1)
+                        <p class="text-muted fs-12px">Paket akan berakhir pada {{ date('j F Y',
+                            strtotime($userSubsId->expired_at)) }}</p>
+                        @endif
                     @endif
-                    @if ($userSubsId->category_id > 1)
-                    <p class="text-muted fs-12px">Paket akan berakhir pada {{ date('j F Y',
-                        strtotime($userSubsId->expired_at)) }}</p>
-                    @endif
-                </div>
             </div>
             <div class="d-flex justify-content-end mt-3">
                 <a href="{{ route('edit-profile') }}" class="btn btn-outline-orange radius-default">Edit Profil</a>

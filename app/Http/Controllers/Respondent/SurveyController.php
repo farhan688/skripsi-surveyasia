@@ -67,9 +67,18 @@ class SurveyController extends Controller
         $user->available_points += 200;
         $user->save();
 
-        $survey = Survey::select(['id', 'title', 'slug'])
+        $survey = Survey::select(['id', 'title', 'slug', 'user_id', 'reward_point', 'status'])
             ->where(['id' => $request->survey_id])
             ->first();
+
+        // Deduct reward_point from researcher's balance if survey is active
+        if ($survey && $survey->status === 'active') {
+            $researcher = \App\Models\User::find($survey->user_id);
+            if ($researcher) {
+                $researcher->reward_balance -= $survey->reward_point;
+                $researcher->save();
+            }
+        }
 
         return redirect()->route('survey.complete', $survey->slug)
             ->with('success', 'Terima kasih! Anda mendapatkan 200 poin.');;
