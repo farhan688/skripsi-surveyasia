@@ -52,8 +52,8 @@
                         <td>{{ $loop->iteration }}</td>
                         <td>
                           <div>
-                            <h6 class="nopadding">{{ $item->sub->user->nama_lengkap }}</h6>
-                            <span class="d-block" style="font-size: 13px">{{ $item->sub->user->email }}</span>
+                            <h6 class="nopadding">{{ $item->sub?->user?->nama_lengkap ?? 'N/A' }}</h6>
+                            <span class="d-block" style="font-size: 13px">{{ $item->sub?->user?->email ?? 'N/A' }}</span>
                           </div>
                         </td>
                         <td>{{ $item->sub->subscription->name }}</td>

@@ -51,6 +51,13 @@
       <li class="nav-item ms-3 me-2 d-none d-md-block">
         <div class="vl"></div>
       </li>
+      @auth
+        @if (Auth::user()->isAdmin())
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('/admin') }}">Dashboard Admin</a>
+          </li>
+        @endif
+      @endauth
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
           aria-expanded="false">

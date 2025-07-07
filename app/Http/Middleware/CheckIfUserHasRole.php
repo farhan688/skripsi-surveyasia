@@ -20,17 +20,18 @@ class CheckIfUserHasRole
     {
         $user = $request->user();
 
+        $hasRequiredRole = false;
         if ($role == 'admin') {
-            $role = Role::IS_ADMIN;
+            $hasRequiredRole = $user->isAdmin();
         } elseif ($role == 'researcher') {
-            $role = Role::IS_RESEARCHER;
+            $hasRequiredRole = $user->isResearcher();
         } elseif ($role == 'respondent') {
-            $role = Role::IS_RESPONDENT;
+            $hasRequiredRole = $user->isRespondent();
         } else {
             abort(404, 'Role not specified or not found');
         }
 
-        if (!$user->hasRole($user, $role)) {
+        if (!$hasRequiredRole) {
             //not allowed
             abort(403, 'Unauthorized');
         }

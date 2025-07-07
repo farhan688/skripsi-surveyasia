@@ -78,19 +78,19 @@ class User extends Authenticatable implements MustVerifyEmail
      * @param int $role
      * @return bool
      */
-    public function hasRole(User $user, $role)
+    public function isAdmin()
     {
-        # code...
+        return $this->role_id === Role::IS_ADMIN;
+    }
 
-        if ($role == Role::IS_ADMIN) {
-            return $user->role_id == Role::IS_ADMIN;
-        }
+    public function isResearcher()
+    {
+        return $this->role_id === Role::IS_RESEARCHER;
+    }
 
-        if ($role == Role::IS_RESEARCHER) {
-            return $user->role_id == Role::IS_RESEARCHER;
-        }
-
-        return $user->role_id == Role::IS_RESPONDENT;
+    public function isRespondent()
+    {
+        return $this->role_id === Role::IS_RESPONDENT;
     }
 
     /**
