@@ -161,7 +161,7 @@
                         form.addEventListener('submit', function(event) {
                             const category = $('#category_id').get(0);
                             if (!form.checkValidity() || category.value == "") {
-                                event.preventorange()
+                                event.preventDefault()
                                 event.stopPropagation()
                                 category.classList.add("error");
                             }

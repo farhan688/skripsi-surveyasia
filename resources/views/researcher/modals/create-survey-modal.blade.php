@@ -15,11 +15,21 @@
             <label for="title" class="form-label">Judul</label>
             <input type="text" class="form-control" name="title" id="title" required>
             <div class="invalid-feedback">Harap masukkan <span class="fw-bold">Judul</span> survey!</div>
+@error('title')
+<div class="invalid-feedback">
+    {{ $message }}
+</div>
+@enderror
           </div>
           <div class="mb-3">
             <label for="desc" class="form-label">Deskripsi</label>
             <textarea class="form-control" name="description" id="description" rows="3" required></textarea>
             <div class="invalid-feedback">Harap masukkan <span class="fw-bold">Deskripsi</span> survey!</div>
+@error('description')
+<div class="invalid-feedback">
+    {{ $message }}
+</div>
+@enderror
           </div>
           <div class="mb-3">
             <label for="title" class="form-label">Kategori Survey</label>
@@ -30,6 +40,11 @@
               @endforeach
             </select>
             <div class="invalid-feedback">Harap pilih <span class="fw-bold">Kategori</span> survey!</div>
+@error('category_id')
+<div class="invalid-feedback">
+    {{ $message }}
+</div>
+@enderror
           </div>
           <div class="mb-3">
             <div class="row">
@@ -44,6 +59,11 @@
                   tidak melebihi 10 menit</div>
                 <div class="invalid-feedback">Harap masukkan <span class="fw-bold">Estimasi Penyelesaian</span> survey!
                 </div>
+@error('estimate_completion')
+<div class="invalid-feedback">
+    {{ $message }}
+</div>
+@enderror
               </div>
               <div class="col-md-4 mt-3 mt-md-0">
                 <label for="max_attempt" class="form-label">Maksimum Responden
@@ -55,6 +75,11 @@
                   <span class="fw-bold">FREE PACKAGE</span>
                 </div>
                 <div class="invalid-feedback">Jumlah <span class="fw-bold">Maksimum Responden</span> tidak valid!</div>
+@error('max_attempt')
+<div class="invalid-feedback">
+    {{ $message }}
+</div>
+@enderror
                 @else
                 <div class="form-text">Harap isi atau sistem akan menentukan 40 sebagai bawaan</div>
                 @endif
@@ -64,10 +89,15 @@
                   {{-- <span><i class="fa fa-question-circle" aria-hidden="true"></i></span></label> --}}
                 <input name="reward_point" type="number" class="form-control" placeholder="0" id="reward_point" required>
                 <div class="invalid-feedback">Harap masukkan <span class="fw-bold">Jumlah Reward</span> survey!</div>
+@error('reward_point')
+<div class="invalid-feedback">
+    {{ $message }}
+</div>
+@enderror
               </div>
             </div>
           </div>
-          
+
           <div class="mb-3">
             <label class="form-label">Pengaturan Survey</label>
             <div class="row">
