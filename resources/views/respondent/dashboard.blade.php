@@ -70,7 +70,10 @@
                                     <p class="fs-14px m-0">Selamat Datang!</p>
                                     <div class="d-flex align-items-center">
                                         <p class="fw-semibold m-0">{{ Auth::user()->nama_lengkap }}</p>
-                                        <img src="{{ Auth::user()->badge }}" alt="badge" class="ms-2" width="20">
+                                        @if (Auth::user()->badge)
+                                        <img src="{{ Auth::user()->badge['image_url'] }}" alt="badge {{ Auth::user()->badge['name'] }}" class="ms-2" width="20">
+                                        <span class="ms-2">{{ Auth::user()->badge['name'] }}</span>
+                                        @endif
                                     </div>
                                 </div>
                             </div>

@@ -52,8 +52,13 @@
                         <td>{{ $loop->iteration }}</td>
                         <td>
                           <div>
-                            <h6 class="nopadding">{{ $item->sub?->user?->nama_lengkap ?? 'N/A' }}</h6>
-                            <span class="d-block" style="font-size: 13px">{{ $item->sub?->user?->email ?? 'N/A' }}</span>
+                            @if ($item->sub && $item->sub->user)
+                                <h6 class="nopadding">{{ $item->sub->user->nama_lengkap }}</h6>
+                                <span class="d-block" style="font-size: 13px">{{ $item->sub->user->email }}</span>
+                            @else
+                                <h6 class="nopadding">N/A</h6>
+                                <span class="d-block" style="font-size: 13px">N/A</span>
+                            @endif
                           </div>
                         </td>
                         <td>{{ $item->sub->subscription->name }}</td>

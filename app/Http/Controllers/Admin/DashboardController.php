@@ -38,7 +38,9 @@ class DashboardController extends Controller
         $year = ['2015', '2016', '2017', '2018', '2019', '2020', '2021'];
         //get notifikasi questionbank, survey pending, news
         $questionbank_sub_templates_act = QuestionBankSubTemplate::with('template')->get();
-        $surveysPending = Survey::where('status', 'pending')->with('user')->orderBy('updated_at', 'asc')->get();
+        $surveysPending = Survey::where('status', 'pending')->with('user')->orderBy('updated_at', 'asc')->get()->filter(function ($survey) {
+            return $survey->user !== null;
+        });
         $news = News::latest()->get();
 
         $user = [];

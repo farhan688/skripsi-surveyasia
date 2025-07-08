@@ -21,12 +21,7 @@ class TransactionController extends Controller
     public $title = "Transaksi";
     public function index()
     {
-        $transactions = Transaction::with('sub.user')->get();
-
-        // Filter out transactions where sub or sub->user is null
-        $transactions = $transactions->filter(function ($transaction) {
-            return $transaction->sub !== null && $transaction->sub->user !== null;
-        });
+        $transactions = Transaction::whereHas('sub.user')->with('sub.user')->get();
         $subscriptions = Subscription::get();
         $data = [
             'title' => $this->title,

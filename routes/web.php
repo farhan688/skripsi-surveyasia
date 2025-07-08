@@ -413,6 +413,7 @@ Route::middleware(['is_admin', 'role:admin'])->group(function () {
         });
         Route::resource('transaction', TransactionController::class);
         Route::resource('questionbank', QuestionBankTemplateController::class);
+        Route::resource('badges', App\Http\Controllers\Admin\BadgeController::class);
         Route::post('/{questionbank}/questions', [QuestionBankTemplateController::class, 'storeQuestions'])->name('storeQuestions');
         // Route::resource('chart', ChartController::class);
         Route::prefix('chart')->name('chart.')->group(function () {

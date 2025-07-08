@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Badge;
 use App\Models\Role;
 use App\Models\Survey;
 use CategorySubcription;
@@ -212,22 +213,16 @@ class User extends Authenticatable implements MustVerifyEmail
     public function getBadgeAttribute()
     {
         $points = $this->points;
-        $badge = '';
 
-        if ($points >= 1 && $points <= 1000) {
-            $badge = asset('assets/img/badge/1.svg');
-        } elseif ($points > 1000 && $points <= 5000) {
-            $badge = asset('assets/img/badge/2.svg');
-        } elseif ($points > 5000 && $points <= 10000) {
-            $badge = asset('assets/img/badge/3.svg');
-        } elseif ($points > 10000 && $points <= 25000) {
-            $badge = asset('assets/img/badge/4.svg');
-        } elseif ($points > 25000 && $points <= 50000) {
-            $badge = asset('assets/img/badge/5.svg');
-        } elseif ($points > 50000) {
-            $badge = asset('assets/img/badge/6.svg');
-        }
+        $badge = Badge::where('min_threshold_points', '<=', $points)
+                      ->where('max_threshold_points', '>=', $points)
+                      ->orderByDesc('min_threshold_points')
+                      ->first();
 
-        return $badge;
-    }
+        return $badge ? [
+            'image_url' => asset('storage/' . $badge->image_path),
+            'name' => $badge->name
+        ] : null;}
+
+        
 }
