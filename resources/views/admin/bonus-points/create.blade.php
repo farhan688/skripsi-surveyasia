@@ -30,7 +30,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="max_points" class="form-label">Maksimal Poin (Kosongkan jika tak terbatas)</label>
-                            <input type="number" class="form-control" id="max_points" name="max_points" value="{{ old('max_points') }}">
+                            <input type="number" class="form-control" id="max_points" name="max_points" value="{{ old('max_points') }}" placeholder="Kosongkan untuk tak terbatas">
                             @error('max_points')
                                 <div class="text-danger">{{ $message }}</div>
                             @enderror
