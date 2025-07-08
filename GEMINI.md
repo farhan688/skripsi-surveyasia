@@ -1,53 +1,55 @@
-# GEMINI Coding Rules for Surveyasia-Skripsi (Laravel Project)
+# Aturan Pengembangan Gemini untuk Proyek Laravel Surveyasia-Skripsi
 
-This file defines the coding rules for the Gemini CLI assistant when contributing to the `Surveyasia-Skripsi` Laravel project.
+File ini mendefinisikan aturan pengembangan yang harus dipatuhi oleh Gemini CLI ketika membantu menulis kode pada proyek Laravel bernama `Surveyasia-Skripsi`.
 
-## 📌 Project Name
-
+## 📌 Nama Proyek
 Surveyasia-Skripsi
 
-## ✅ CODING INSTRUCTIONS
+## ⚙️ Framework & Teknologi
+- Laravel 10+
+- PHP 8.1+
+- MySQL
+- Blade (opsional: Vue.js atau Alpine.js)
 
-Gemini should follow these rules when coding:
+---
 
-### 1. Feature Development
+## ✅ ATURAN PENGKODINGAN
 
-- Write clean, maintainable, and PSR-12-compliant PHP code.
-- Follow Laravel best practices: use Controllers, Models, Requests, Migrations, Policies, etc., appropriately.
-- If a new feature is created:
-  - Use the appropriate Laravel artisan commands (e.g., `make:controller`, `make:model`).
-  - Apply dependency injection and route model binding where applicable.
-  - Add form request validation if input is involved.
+Gemini harus mengikuti aturan berikut:
 
-### 2. Documentation (`DOCUMENTATION.md`)
+### 1. Pengembangan Fitur
+- Tulis kode PHP yang bersih, dapat dipelihara, dan sesuai standar PSR-12.
+- Ikuti praktik terbaik Laravel:
+  - Gunakan Controller, Model, Request, Migration, Policy, dan Resource secara tepat.
+  - Gunakan `artisan` command untuk membuat struktur kode (misalnya `make:controller`, `make:model`).
+  - Gunakan **Dependency Injection** dan **Route Model Binding** jika memungkinkan.
+  - Tambahkan validasi menggunakan `FormRequest` untuk input dari pengguna.
 
-Every time Gemini generates or modifies a feature, it must **append** clear and structured documentation to the `DOCUMENTATION.md` file in the root project directory.
+### 2. Dokumentasi (`DOCUMENTATION.md`)
+Setiap fitur baru yang dikembangkan **wajib didokumentasikan** secara rinci ke dalam file `DOCUMENTATION.md` pada direktori root proyek.
 
-Each entry in the documentation file must include:
+> **Seluruh dokumentasi dan komentar di dalam kode harus ditulis menggunakan Bahasa Indonesia yang baik dan jelas.**
+
+Format dokumentasi:
 
 ```markdown
-## [Feature Title]
+## [Judul Fitur]
 
-**Date:** YYYY-MM-DD  
-**Author:** Gemini
+**Tanggal:** YYYY-MM-DD  
+**Penulis:** Gemini
 
-### Description
+### Deskripsi
+Penjelasan singkat mengenai apa yang dilakukan oleh fitur ini dan mengapa fitur ini ditambahkan.
 
-A concise explanation of what this feature does and why it was added.
-
-### Files Modified / Created
-
+### File yang Dibuat / Diubah
 - `app/Http/Controllers/...`
 - `resources/views/...`
 - `routes/web.php`
-- etc.
+- dst.
 
-### Technical Notes
+### Catatan Teknis
+- Jelaskan logika utama dan keputusan teknis (misalnya penggunaan relasi Eloquent, middleware, helper khusus, dsb.).
+- Jika menggunakan package pihak ketiga, jelaskan alasan dan cara penggunaannya.
 
-- Mention key logic, decisions, or Laravel features used (e.g., Eloquent Relationships, Middleware).
-- If using third-party packages or custom helpers, explain how and why.
-
-### Usage
-
-Explain how the developer or user can test or use this feature (e.g., URL, CLI commands, auth level).
-```
+### Cara Penggunaan
+Jelaskan bagaimana cara menggunakan atau menguji fitur ini (URL, hak akses, perintah artisan, dsb).
