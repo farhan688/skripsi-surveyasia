@@ -38,7 +38,7 @@
                                     <td>{{ $badge->id }}</td>
                                     <td>{{ $badge->name }}</td>
                                     <td>{{ $badge->min_threshold_points }}</td>
-                                    <td>{{ $badge->max_threshold_points }}</td>
+                                    <td>{{ $badge->max_threshold_points ?? 'Tak Terhingga' }}</td>
                                     <td><img src="{{ Storage::url($badge->image_path) }}" alt="{{ $badge->name }}" width="50"></td>
                                     <td>
                                         <a href="{{ route('admin.badges.edit', $badge->id) }}" class="btn btn-warning btn-sm">Edit</a>

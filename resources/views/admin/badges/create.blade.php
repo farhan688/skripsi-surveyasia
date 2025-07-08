@@ -23,8 +23,8 @@
                             <input type="number" class="form-control" id="min_threshold_points" name="min_threshold_points" required>
                         </div>
                         <div class="mb-3">
-                            <label for="max_threshold_points" class="form-label">Maximum Threshold Poin</label>
-                            <input type="number" class="form-control" id="max_threshold_points" name="max_threshold_points" required>
+                            <label for="max_threshold_points" class="form-label">Maximum Threshold Poin (Kosongkan jika tak terbatas)</label>
+                            <input type="number" class="form-control" id="max_threshold_points" name="max_threshold_points" placeholder="Kosongkan untuk tak terbatas">
                         </div>
                         <div class="mb-3">
                             <label for="image" class="form-label">Gambar Badge</label>

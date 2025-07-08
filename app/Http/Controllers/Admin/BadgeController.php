@@ -54,7 +54,7 @@ class BadgeController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'min_threshold_points' => 'required|integer|min:0',
-            'max_threshold_points' => 'required|integer|min:' . ($request->min_threshold_points + 1),
+            'max_threshold_points' => 'nullable|integer|min:0',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
@@ -114,7 +114,7 @@ class BadgeController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'min_threshold_points' => 'required|integer|min:0',
-            'max_threshold_points' => 'required|integer|min:' . ($request->min_threshold_points + 1),
+            'max_threshold_points' => 'nullable|integer|min:0',
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
