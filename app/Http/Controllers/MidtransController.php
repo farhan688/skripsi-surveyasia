@@ -8,6 +8,8 @@ use Midtrans\Notification;
 use App\Models\Transaction;
 use App\Models\CategorySubcriptions;
 use App\Models\User;
+use App\Notifications\TopupSuccessful;
+use Illuminate\Support\Facades\Log;
 
 class MidtransController extends Controller
 {
@@ -33,6 +35,8 @@ class MidtransController extends Controller
         $carbon = Carbon::now();
 
         // handle notification status
+        Log::info('Midtrans Notification Received', ['order_id' => $notification->order_id, 'status' => $status, 'type' => $type, 'fraud' => $fraud]);
+
         if ($status == 'capture') {
             if ($type == 'credit_card') {
                 if ($fraud == 'challenge') {
@@ -44,6 +48,8 @@ class MidtransController extends Controller
                         $user = $transaction->user;
                         $user->reward_balance += $transaction->total;
                         $user->save();
+                        $user->notify(new TopupSuccessful($transaction->total));
+                        Log::info('Top Up Saldo Notification Sent', ['user_id' => $user->id, 'amount' => $transaction->total]);
                     } else {
                         $userSub = $transaction->sub->where('id', $transaction->user_subscription_id)->first();
                         if ($transaction->title == 'Make Your Own') {
@@ -117,6 +123,8 @@ class MidtransController extends Controller
                 $user = $transaction->user;
                 $user->reward_balance += $transaction->total;
                 $user->save();
+                $user->notify(new TopupSuccessful($transaction->total));
+                Log::info('Top Up Saldo Notification Sent', ['user_id' => $user->id, 'amount' => $transaction->total]);
             } else {
                 $userSub = $transaction->sub->where('id', $transaction->user_subscription_id)->first();
                 if ($transaction->title == 'Make Your Own') {

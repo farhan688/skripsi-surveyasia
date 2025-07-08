@@ -91,6 +91,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('balance', [App\Http\Controllers\BalanceController::class, 'index'])->name('balance.index');
     Route::post('balance/topup', [App\Http\Controllers\BalanceController::class, 'topup'])->name('balance.topup');
+
+    // Notification routes
+    Route::post('/notifications/{id}/mark-as-read', [App\Http\Controllers\NotificationController::class, 'markAsRead']);
+    Route::post('/notifications/mark-all-as-read', [App\Http\Controllers\NotificationController::class, 'markAllAsRead']);
 });
 
 /* Screening routes */
@@ -414,6 +418,7 @@ Route::middleware(['is_admin', 'role:admin'])->group(function () {
         Route::resource('transaction', TransactionController::class);
         Route::resource('questionbank', QuestionBankTemplateController::class);
         Route::resource('badges', App\Http\Controllers\Admin\BadgeController::class);
+        Route::resource('bonus-points', App\Http\Controllers\Admin\BonusPointThresholdController::class);
         Route::post('/{questionbank}/questions', [QuestionBankTemplateController::class, 'storeQuestions'])->name('storeQuestions');
         // Route::resource('chart', ChartController::class);
         Route::prefix('chart')->name('chart.')->group(function () {

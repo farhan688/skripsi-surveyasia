@@ -19,6 +19,7 @@ use App\Notifications\Auth\QueuedEmailVerification;
 use \Staudenmeir\EloquentHasManyDeep\HasRelationships;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Storage;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -215,12 +216,15 @@ class User extends Authenticatable implements MustVerifyEmail
         $points = $this->points;
 
         $badge = Badge::where('min_threshold_points', '<=', $points)
-                      ->where('max_threshold_points', '>=', $points)
+                      ->where(function ($query) use ($points) {
+                          $query->whereNull('max_threshold_points')
+                                ->orWhere('max_threshold_points', '>=', $points);
+                      })
                       ->orderByDesc('min_threshold_points')
                       ->first();
 
         return $badge ? [
-            'image_url' => asset('storage/' . $badge->image_path),
+            'image_url' => Storage::url($badge->image_path),
             'name' => $badge->name
         ] : null;}
 

@@ -26,7 +26,8 @@
                             <tr>
                                 <th>ID</th>
                                 <th>Nama</th>
-                                <th>Threshold Poin</th>
+                                <th>Minimal Point</th>
+                                <th>Maksimal Point</th>
                                 <th>Gambar</th>
                                 <th>Aksi</th>
                             </tr>
@@ -36,8 +37,9 @@
                                 <tr>
                                     <td>{{ $badge->id }}</td>
                                     <td>{{ $badge->name }}</td>
-                                    <td>{{ $badge->threshold_points }}</td>
-                                    <td><img src="{{ asset('storage/' . $badge->image_path) }}" alt="{{ $badge->name }}" width="50"></td>
+                                    <td>{{ $badge->min_threshold_points }}</td>
+                                    <td>{{ $badge->max_threshold_points }}</td>
+                                    <td><img src="{{ Storage::url($badge->image_path) }}" alt="{{ $badge->name }}" width="50"></td>
                                     <td>
                                         <a href="{{ route('admin.badges.edit', $badge->id) }}" class="btn btn-warning btn-sm">Edit</a>
                                         <form action="{{ route('admin.badges.destroy', $badge->id) }}" method="POST" style="display:inline-block;">

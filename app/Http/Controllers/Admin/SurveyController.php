@@ -21,6 +21,7 @@ use App\Models\UsersSurvey;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
+use App\Notifications\SurveyStatusChanged;
 
 class SurveyController extends Controller
 {
@@ -116,11 +117,15 @@ class SurveyController extends Controller
 
     // merubah status survey dari pending ke tolak
     // dengan memberikan alasan penolakan (reason_deny)
-    public function surveyDeny(Request $request, $survey)
+    public function surveyDeny(Request $request, $surveyId)
     {
-        Survey::where('id', $survey)->update(
+        $survey = Survey::findOrFail($surveyId);
+        $survey->update(
             ['status' => 'reject', 'reason_deny' => $request->reason]
         );
+
+        // Notify the researcher
+        $survey->user->notify(new \App\Notifications\SurveyStatusChanged($survey->title, 'rejected'));
 
         return redirect('/admin/survey');
     }
@@ -153,7 +158,10 @@ class SurveyController extends Controller
     // merubah status survey dari pending ke active
     public function surveyAcc(Survey $survey)
     {
-        Survey::where('id', $survey->id)->update(['status' => 'active']);
+        $survey->update(['status' => 'active']);
+
+        // Notify the researcher
+        $survey->user->notify(new \App\Notifications\SurveyStatusChanged($survey->title, 'active'));
 
         return redirect('/admin/survey');
     }

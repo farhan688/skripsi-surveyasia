@@ -115,10 +115,17 @@ class UsersProfileController extends Controller
 
         $user->nama_lengkap = $request->get('nama_lengkap');
         $user->email = $request->get('email');
-        $user->avatar = $request->get('avatar');
         $user->telp = $request->get('telp');
         $user->job = $request->get('job');
         $user->address = $request->get('address');
+
+        if ($request->file('avatar')) {
+            if ($user->avatar && file_exists(storage_path('app/public/' . $user->avatar))) {
+                Storage::delete('public/' . $user->avatar);
+            }
+            $file = $request->file('avatar')->store('avatars', 'public');
+            $user->avatar = $file;
+        }
 
         if ($user->profile) {
             $user->profile->nama_lengkap = $request->get('nama_lengkap');
@@ -126,18 +133,17 @@ class UsersProfileController extends Controller
             $user->profile->job = $request->get('job');
             $user->profile->address = $request->get('address');
 
-            $user->profile->save($request->all());
+            $user->profile->save();
+        } else {
+            $user->profile()->create([
+                'nama_lengkap' => $request->get('nama_lengkap'),
+                'telp' => $request->get('telp'),
+                'job' => $request->get('job'),
+                'address' => $request->get('address'),
+            ]);
         }
 
-        if ($request->file('avatar')) {
-            if ($user->avatar && file_exists(storage_path('app/public') . $user->avatar)) {
-                Storage::delete('public/' . $user->avatar);
-            }
-            $file = $request->file('avatar')->store('avatars', 'public');
-            $user->avatar = $file;
-        }
-
-        $user->save($request->all());
+        $user->save();
 
 
         return redirect()->route('user-profile')->with('success', 'Ubah profil berhasil.');

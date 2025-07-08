@@ -45,8 +45,14 @@
     </a>
     <a href="{{ route('admin.badges.index') }}" class="text-decoration-none">
         <div class="d-flex align-items-center px-4 py-3 {{ Request::is('admin/badges*') ? 'active' : '' }}">
-            <img src="{{ asset('assets/img/vec-badge.svg') }}" alt="" width="16px" height="16px">
+            <img src="{{ asset('assets/img/vec-point.svg') }}" alt="" width="16px" height="16px">
             <span class="ms-3 text-sidebar" aria-current="page">Point & Badge</span>
+        </div>
+    </a>
+    <a href="{{ route('admin.bonus-points.index') }}" class="text-decoration-none">
+        <div class="d-flex align-items-center px-4 py-3 {{ Request::is('admin/bonus-points*') ? 'active' : '' }}">
+            <img src="{{ asset('assets/img/vec-point.svg') }}" alt="" width="16px" height="16px">
+            <span class="ms-3 text-sidebar" aria-current="page">Bonus Poin</span>
         </div>
     </a>
     <a href="{{ route('admin.news.index') }}" class="text-decoration-none">

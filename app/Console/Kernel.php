@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        \App\Console\Commands\AwardBonusPoints::class,
     ];
 
     /**
@@ -24,10 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
-
-        // schedule to run queue emails on cron jobs daily (every midnight)
-        // $schedule->command('queue:work --queue=low,emails')->everyMinute();
+        $schedule->command('award:bonus-points')->weekly();
     }
 
     /**

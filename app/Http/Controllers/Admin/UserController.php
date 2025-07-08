@@ -21,6 +21,7 @@ use App\Models\Survey;
 use App\Models\UsersProfile;
 use Illuminate\Support\Facades\Gate as Gate;
 use Illuminate\Support\Facades\Notification;
+use App\Notifications\ProfileVerificationStatusChanged;
 use Illuminate\Support\Facades\Gate as FacadesGate;
 use Illuminate\Contracts\Auth\Access\Gate as AccessGate;
 
@@ -233,16 +234,21 @@ class UserController extends Controller
     }
     public function status($id, $status)
     {
-        // $user = $request->validate([
-        //     'status' => 'required'
-        // ]);
-        User::where('id', $id)->update(['status' => $status]);
-        // jika user diacc
+        $user = User::findOrFail($id);
+        $user->update(['status' => $status]);
+
+        $statusString = '';
         if ($status == 2) {
-            return back()->with('status', 'Pengguna disetujui');
+            $statusString = 'verified';
+            $message = 'Pengguna disetujui';
         } else {
-            return back()->with('status', 'Pengguna ditolak');
+            $statusString = 'rejected';
+            $message = 'Pengguna ditolak';
         }
+
+        $user->notify(new ProfileVerificationStatusChanged($statusString));
+
+        return back()->with('status', $message);
     }
 
     public function accUser($id)

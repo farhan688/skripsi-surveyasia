@@ -23,6 +23,28 @@
                 <a class="nav-link" href="{{ route('news.index') }}">Berita</a>
             </li>
             @auth
+                <li class="nav-item dropdown position-relative">
+                    <a class="nav-link px-2" href="#" id="navbarDropdownNotification" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bell fa-lg"></i>
+                        @if (Auth::user()->unreadNotifications->count() > 0)
+                            <span class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle" style="font-size: 0.6em;">
+                                {{ Auth::user()->unreadNotifications->count() }}
+                            </span>
+                        @endif
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownNotification" style="min-width: 280px;">
+                        <li><h6 class="dropdown-header">Notifikasi</h6></li>
+                        @forelse (Auth::user()->unreadNotifications as $notification)
+                            <li><a class="dropdown-item" href="#" onclick="markAsRead('{{ $notification->id }}')">{{ $notification->data['message'] }}</a></li>
+                        @empty
+                            <li><a class="dropdown-item" href="#">Tidak ada notifikasi baru.</a></li>
+                        @endforelse
+                        @if (Auth::user()->unreadNotifications->count() > 0)
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-center" href="#" onclick="markAllAsRead()">Tandai semua sudah dibaca</a></li>
+                        @endif
+                    </ul>
+                </li>
                 @if (\Auth::user()->avatar == null)
                     <li>
                         <img class="rounded-circle object-fit-cover" src="{{ asset('assets/img/noimage.png') }}"
@@ -74,3 +96,37 @@
         </ul>
     </div>
 </nav>
+
+<script>
+    function markAsRead(notificationId) {
+        fetch(`/notifications/${notificationId}/mark-as-read`, {
+            method: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                location.reload();
+            }
+        });
+    }
+
+    function markAllAsRead() {
+        fetch(`/notifications/mark-all-as-read`, {
+            method: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': '{{ csrf_token() }}',
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                location.reload();
+            }
+        });
+    }
+</script>

@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Database\Eloquent\Builder;
 use App\Http\Requests\Survey\AnswerQuestionsRequest;
+use App\Notifications\SurveyCompleted;
+use App\Notifications\RespondentCompletedSurvey;
+use App\Notifications\SurveyTargetReached;
 
 class SurveyController extends Controller
 {
@@ -70,6 +73,25 @@ class SurveyController extends Controller
         $survey = Survey::select(['id', 'title', 'slug', 'user_id', 'reward_point', 'status'])
             ->where(['id' => $request->survey_id])
             ->first();
+
+        // Notify respondent about survey completion
+        $user->notify(new SurveyCompleted($survey->title, $survey->reward_point, 200));
+
+        // Notify researcher that a respondent completed their survey
+        $researcher = \App\Models\User::find($survey->user_id);
+        if ($researcher) {
+            $researcher->notify(new \App\Notifications\RespondentCompletedSurvey($user->nama_lengkap, $survey->title));
+        }
+
+        // Check if survey target is reached and notify researcher
+        $completedRespondentsCount = \App\Models\UsersSurvey::where('survey_id', $survey->id)->count();
+        if ($survey->target_respondents && $completedRespondentsCount >= $survey->target_respondents && !$survey->target_reached_notified) {
+            if ($researcher) {
+                $researcher->notify(new \App\Notifications\SurveyTargetReached($survey->title));
+                $survey->target_reached_notified = true;
+                $survey->save();
+            }
+        }
 
         // Deduct reward_point from researcher's balance if survey is active
         if ($survey && $survey->status === 'active') {

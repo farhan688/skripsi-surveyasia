@@ -1,6 +1,6 @@
 @extends('layouts.footer')
 @extends('layouts.base')
-@extends('respondent.layouts.navbar')
+@extends('respondent.layouts.navbar2')
 
 @section('content')
 
@@ -62,7 +62,7 @@
                                 <img src="{{ Auth::user()->avatar }}" alt="{{ Auth::user()->nama_lengkap }}" width="50"
                                     height="50" class="d-block me-2 rounded-pill object-fit-cover">
                                 @else
-                                <img src="{{ asset('storage/' . \auth::user()->avatar) }}"
+                                <img src="{{ \Illuminate\Support\Facades\Storage::url(\auth::user()->avatar) }}"
                                     alt="{{ Auth::user()->nama_lengkap }}" width="50" height="50"
                                     class="d-block me-2 rounded-pill object-fit-cover">
                                 @endif
