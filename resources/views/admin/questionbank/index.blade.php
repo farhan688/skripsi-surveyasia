@@ -20,7 +20,7 @@
             @include('admin.component.sidebar')
         </div>
         <div class="col-10 nopadding">
-            @include('admin.component.header')
+            @include('admin.component.newheader')
 
             <div class="container pt-4">
                 @if (session()->has('status'))

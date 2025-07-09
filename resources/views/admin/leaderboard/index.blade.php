@@ -19,15 +19,7 @@
                 @include('admin.component.sidebar')
             </div>
             <div class="col-10 nopadding">
-                @include('admin.component.header')
-
-                {{-- <div class="bg-gradient-to-r from-orange to-danger py-5"
-                    style="background: linear-gradient(to right, #f97316, #ef4444);">
-                    <div class="container py-4">
-                        <h1 class="text-white fw-bold mb-2">Leaderboard</h1>
-                        <p class="text-white-50 mb-0">Peringkat peserta berdasarkan point yang dikumpulkan</p>
-                    </div>
-                </div> --}}
+                @include('admin.component.newheader')
 
                 <!-- Leaderboard Content -->
                 <div class="container py-5">

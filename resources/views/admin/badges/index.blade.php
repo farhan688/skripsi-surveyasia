@@ -1,7 +1,19 @@
 @extends('admin.layouts.base')
 
+@section('css')
+    <link rel="stylesheet" href="{{ asset('css/admin-dashboard.css') }}">
+    <style>
+        body {
+            background-color: #F7FAFC;
+        }
+    </style>
+@endsection
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.12.0/css/dataTables.bootstrap5.min.css">
+
 @section('content')
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: #F7F8FC;">
         <div class="row">
             <div class="col-2 nopadding">
                 @include('admin.component.sidebar')

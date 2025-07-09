@@ -110,8 +110,7 @@
                         <h3 class="fw-semibold">{{ $user->nama_lengkap }}</h3>
                         @if (Auth::user()->role_id == 3)
                         @if (Auth::user()->badge)
-                        <img src="{{ Auth::user()->badge['image_url'] }}" alt="badge {{ Auth::user()->badge['name'] }}" class="ms-2" width="30">
-                        <span class="ms-2">{{ Auth::user()->badge['name'] }}</span>
+                        <img src="{{ Auth::user()->badge['image_url'] }}" alt="badge {{ Auth::user()->badge['name'] }}" class="ms-2" width="50">
                         @endif
                         @endif
                     </div>

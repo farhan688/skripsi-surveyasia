@@ -19,7 +19,7 @@
             @include('admin.component.sidebar')
         </div>
         <div class="col-10 nopadding">
-            @include('admin.component.header')
+            @include('admin.component.newheader')
             <div class="container pt-4">
                 <div class="row pb-5 pt-3">
                     <div class="col">

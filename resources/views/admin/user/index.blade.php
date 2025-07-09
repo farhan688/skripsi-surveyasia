@@ -6,7 +6,11 @@
     body {
         background-color: #F7FAFC;
     }
-
+    .avatar-img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
 </style>
 @endsection
 
@@ -22,7 +26,7 @@
             @include('admin.component.sidebar')
         </div>
         <div class="col-10 nopadding">
-            @include('admin.component.header')
+            @include('admin.component.newheader')
 
             <div class="container mt-4">
                 {{-- alert --}}
@@ -98,13 +102,13 @@
                         <table id="hempas" class="table table-no-border-head align-middle" style="border-radius: 20px; overflow: hidden; background-color:#ffffff">
                         <thead style="background-color:#f6beb226;">
                             <tr class="fw-bold">
-                                <td scope="col" class="text-left align-middle">No</th>
-                                <td scope="col" class="text-left align-middle">Pengguna</th>
-                                <td scope="col" class="text-left align-middle">Pekerjaan</th>
-                                <td scope="col" class="text-left align-middle">Region</th>
-                                <td scope="col" class="text-left align-middle">Waktu</th>
-                                <td scope="col" class="text-left align-middle">Status</th>
-                                <td scope="col" class="text-left align-middle">Konfirmasi</th>
+                                <td scope="col" class="text-start align-middle">No</td>
+                                <td scope="col" class="text-start align-middle">Pengguna</td>
+                                <td scope="col" class="text-start align-middle">Pekerjaan</td>
+                                <td scope="col" class="text-start align-middle">Region</td>
+                                <td scope="col" class="text-start align-middle">Waktu</td>
+                                <td scope="col" class="text-start align-middle">Status</td>
+                                <td scope="col" class="text-start align-middle">Konfirmasi</td>
                             </tr>
                         </thead>
                         <tbody>
@@ -124,15 +128,15 @@
                                 @endif
 
                             <tr>
-                                <td>{{ $no++ }}</td>
-                                <td>
+                                <td class="text-start align-middle">{{ $no++ }}</td>
+                                <td class="text-start align-middle">
                                     <div class="d-flex align-items-center">
                                         @if ($user->avatar == null)
-                                            <img src="{{ asset('assets/img/noimage.png') }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                            <img src="{{ asset('assets/img/noimage.png') }}" alt="" class="rounded-pill me-2 avatar-img">
                                         @elseif ($user->provider_name != null)
-                                            <img src="{{ $user->avatar }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                            <img src="{{ $user->avatar }}" alt="" class="rounded-pill me-2 avatar-img">
                                         @else
-                                            <img src="{{ asset('storage/' . $user->avatar) }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                            <img src="{{ asset('storage/' . $user->avatar) }}" alt="" class="rounded-pill me-2 avatar-img">
                                         @endif
                                         <div>
                                             <h6 class="nopadding">{{ $user->nama_lengkap }}</h6>
@@ -140,10 +144,10 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>{{ $user->job }}</td>
-                                <td>{{ $user->profile->province }}</td>
-                                <td>{{ $user->created_at }}</td>
-                                <td>
+                                <td class="text-start align-middle">{{ $user->job }}</td>
+                                <td class="text-start align-middle">{{ $user->profile->province }}</td>
+                                <td class="text-start align-middle">{{ $user->created_at }}</td>
+                                <td class="text-start align-middle">
                                     @if ($user->status == 1)
                                     <div class="text-pending p-2 text-center rounded-pill">Menunggu</div>
                                     @elseif ($user->status == 2)
@@ -152,7 +156,7 @@
                                     <div class="text-rejected p-2 text-center rounded-pill">Ditolak</div>
                                     @endif
                                 </td>
-                                <td class="text-end">
+                                <td class="text-end align-middle">
                                     @if ($user->status == 3)
                                     <div class="aksi-menu">
                                         <ul>
@@ -345,13 +349,13 @@
                         <table id="heyaa" class="table table-no-border-head align-middle" style="width:100%; border-radius: 20px; overflow: hidden; background-color:#ffffff">
                         <thead style="background-color:#f6beb226;">
                             <tr class="fw-bold">
-                                        <td scope="col" class="text-left align-middle">ID</td>
-                                        <td scope="col" class="text-left align-middle">Pengguna</td>
-                                        <td scope="col" class="text-left align-middle">Pekerjaan</td>
-                                        <td scope="col" class="text-left align-middle">Role</td>
-                                        <td scope="col" class="text-left align-middle">Terakhir Aktif</td>
-                                        <td scope="col" class="text-left align-middle">Status</td>
-                                        <td scope="col" class="text-left align-middle">Aksi</td>
+                                        <td scope="col" class="text-start align-middle">ID</td>
+                                        <td scope="col" class="text-start align-middle">Pengguna</td>
+                                        <td scope="col" class="text-start align-middle">Pekerjaan</td>
+                                        <td scope="col" class="text-start align-middle">Role</td>
+                                        <td scope="col" class="text-start align-middle">Terakhir Aktif</td>
+                                        <td scope="col" class="text-start align-middle">Status</td>
+                                        <td scope="col" class="text-start align-middle">Aksi</td>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -379,11 +383,11 @@
                                             <td>{{ $i++ }}</td>
                                             <td scope="col" class="d-flex align-items-center">
                                                 @if ($ser->avatar == null)
-                                                    <img src="{{ asset('assets/img/noimage.png') }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                                    <img src="{{ asset('assets/img/noimage.png') }}" alt="" class="rounded-pill me-2 avatar-img">
                                                 @elseif ($ser->provider_name != null)
-                                                    <img src="{{ $ser->avatar }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                                    <img src="{{ $ser->avatar }}" alt="" class="rounded-pill me-2 avatar-img">
                                                 @else
-                                                    <img src="{{ asset('storage/' . $ser->avatar) }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                                    <img src="{{ asset('storage/' . $ser->avatar) }}" alt="" class="rounded-pill me-2 avatar-img">
                                                 @endif
                                                 <div>
                                                     <h6 class="nopadding">{{ $ser->nama_lengkap }}</h6>
