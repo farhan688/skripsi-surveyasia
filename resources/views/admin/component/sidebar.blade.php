@@ -1,5 +1,5 @@
 
-<nav class="col-2 nav flex-column bg-white py-0 shadow-sm position-fixed" id="sidebar-dashboard">
+<nav class="col-2 bg-white py-0 shadow-sm position-fixed" id="sidebar-dashboard" style="display: block !important;">
     <img src="{{ asset('assets/img/newSurveyasia-black.png') }}" alt="" height="40px" width="180px" class="mx-auto mt-3 mb-5">
     <a href="{{ route('admin.dashboard') }}" class="text-decoration-none">
         <div class="d-flex align-items-center px-4 py-3 {{ Request::is('admin/dashboard') ? 'active' : '' }}">
@@ -61,10 +61,5 @@
             <span class="ms-3 text-sidebar" aria-current="page" href="#">Berita</span>
         </div>
     </a>
-    
-
   <hr style="color: #DFE0EB;">
-
 </nav>
-
-

@@ -31,3 +31,26 @@ Seluruh informasi ditulis dalam Bahasa Indonesia.
 ---
 
 > 📝 Tambahkan dokumentasi baru di bawah ini setiap kali fitur baru dibuat.
+
+---
+
+## Perbaikan: ParseError di SurveyCompleted Notification
+
+**Tanggal:** 2025-07-09  
+**Penulis:** Gemini
+
+### Deskripsi
+
+Memperbaiki `ParseError: syntax error, unexpected identifier "otifications", expecting "{"` yang terjadi pada file `app/Notifications/SurveyCompleted.php`. Kesalahan ini disebabkan oleh kesalahan ketik pada deklarasi namespace.
+
+### File yang Dibuat / Diubah
+
+- `app/Notifications/SurveyCompleted.php`
+
+### Catatan Teknis
+
+Kesalahan terjadi pada baris `namespace App\notifications;` di mana "notifications" seharusnya diawali dengan huruf kapital "N" (`Notifications`). Perbaikan dilakukan dengan mengubah `notifications` menjadi `Notifications` agar sesuai dengan standar penamaan namespace PHP dan Laravel.
+
+### Cara Penggunaan
+
+Tidak ada langkah penggunaan khusus. Perbaikan ini bersifat korektif dan memastikan aplikasi dapat berjalan tanpa `ParseError` tersebut saat memproses notifikasi penyelesaian survei.
