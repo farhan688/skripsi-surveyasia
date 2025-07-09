@@ -57,6 +57,9 @@
                                     <button class="nav-link text-secondary" id="transaksi-tab" data-bs-toggle="tab"
                                         data-bs-target="#transaksi" type="button" role="tab" aria-controls="transaksi"
                                         aria-selected="false">Transaksi</button>
+                                    <button class="nav-link text-secondary" id="data-poin-tab" data-bs-toggle="tab"
+                                        data-bs-target="#data-poin" type="button" role="tab" aria-controls="data-poin"
+                                        aria-selected="false">Data Poin</button>
                                 </div>
                             </nav>
                         </div>
@@ -384,6 +387,24 @@
                                                 <!-- Belum bisa Menampilkan Transaksi -->
                                             </tbody>
                                         </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="data-poin" role="tabpanel" aria-labelledby="data-poin-tab">
+                                <div class="card border-0 bg-white p-3" style="border-radius: 20px;">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="total_points" class="form-label">Total Poin</label>
+                                                <input type="text" class="form-control" id="total_points" value="{{ number_format($user->points ?? 0, 0, ',', '.') }}" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="available_points" class="form-label">Poin Tersedia</label>
+                                                <input type="text" class="form-control" id="available_points" value="{{ number_format($user->available_points ?? 0, 0, ',', '.') }}" readonly>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
