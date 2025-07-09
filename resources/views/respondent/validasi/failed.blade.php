@@ -1,4 +1,5 @@
 @extends('layouts.base')
+@extends('respondent.layouts.navbar2')
 
 
 @section('content')

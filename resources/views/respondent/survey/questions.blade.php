@@ -1,6 +1,6 @@
 @extends('layouts.footer')
 @extends('layouts.base')
-@extends('respondent.layouts.navbar')
+@extends('respondent.layouts.navbar2')
 <link rel="stylesheet" href="{{ asset('css/components/rating.css') }}">
 <link rel="stylesheet" href="{{ asset('css/components/scale.css') }}">
 
