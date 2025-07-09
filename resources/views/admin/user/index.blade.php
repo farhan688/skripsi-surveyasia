@@ -126,9 +126,18 @@
                             <tr>
                                 <td>{{ $no++ }}</td>
                                 <td>
-                                    <div>
-                                        <h6 class="nopadding">{{ $user->nama_lengkap }}</h6>
-                                        <span class="d-block" style="font-size: 13px">{{ $user->email }}</span>
+                                    <div class="d-flex align-items-center">
+                                        @if ($user->avatar == null)
+                                            <img src="{{ asset('assets/img/noimage.png') }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                        @elseif ($user->provider_name != null)
+                                            <img src="{{ $user->avatar }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                        @else
+                                            <img src="{{ asset('storage/' . $user->avatar) }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                        @endif
+                                        <div>
+                                            <h6 class="nopadding">{{ $user->nama_lengkap }}</h6>
+                                            <span class="d-block" style="font-size: 13px">{{ $user->email }}</span>
+                                        </div>
                                     </div>
                                 </td>
                                 <td>{{ $user->job }}</td>
@@ -368,25 +377,19 @@
 
                                         <tr>
                                             <td>{{ $i++ }}</td>
-                                            @if ($ser->avatar != null)
-                                                <td scope="col" class="d-flex align-items-center">
-                                                    <img src="{{ asset('assets/img/photo-neil-seims.jpg') }}" alt=""
-                                                        class="rounded-pill me-2">
-                                                    <div>
-                                                        <h6 class="nopadding">{{ $ser->nama_lengkap }}</h6>
-                                                        <span class="d-block" style="font-size: 13px">{{ $ser->email }}</span>
-                                                    </div>
-                                                </td>
-                                            @else
-                                                <td scope="col" class="d-flex align-items-center">
-                                                    <img src="{{ asset('assets/img/photo-neil-seims.jpg') }}" alt=""
-                                                        class="rounded-pill me-2">
-                                                    <div>
-                                                        <h6 class="nopadding">{{ $ser->nama_lengkap }}</h6>
-                                                        <span class="d-block" style="font-size: 13px">{{ $ser->email }}</span>
-                                                    </div>
-                                                </td>
-                                            @endif
+                                            <td scope="col" class="d-flex align-items-center">
+                                                @if ($ser->avatar == null)
+                                                    <img src="{{ asset('assets/img/noimage.png') }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                                @elseif ($ser->provider_name != null)
+                                                    <img src="{{ $ser->avatar }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                                @else
+                                                    <img src="{{ asset('storage/' . $ser->avatar) }}" alt="" class="rounded-pill me-2" width="40" height="40">
+                                                @endif
+                                                <div>
+                                                    <h6 class="nopadding">{{ $ser->nama_lengkap }}</h6>
+                                                    <span class="d-block" style="font-size: 13px">{{ $ser->email }}</span>
+                                                </div>
+                                            </td>
                                             <td>{{ $ser->job }}</td>
                                             @if ($ser->role_id != null && $ser->role != null)
                                                 <td>{{ $ser->role->name }}</td>
