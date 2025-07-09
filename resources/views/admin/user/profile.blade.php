@@ -86,9 +86,16 @@
                                                     <br>
                                                     <p class=" text-center " style="fw-bold; font-size: 13px;">Foto
                                                         Profil</p>
-                                                    <img src="{{ asset('assets/img/photo-neil-seims.jpg') }}"
-                                                        alt="Profile Picture" width="70" height="70"
-                                                        class="d-block mb-2 rounded-pill profile-picture-preview object-fit-cover">
+                                                    @if ($user->avatar == null)
+                                                        <img src="{{ asset('assets/img/noimage.png') }}" alt="Profile Picture" width="70" height="70"
+                                                            class="d-block mb-2 rounded-pill profile-picture-preview object-fit-cover">
+                                                    @elseif ($user->provider_name != null)
+                                                        <img src="{{ $user->avatar }}" alt="Profile Picture" width="70" height="70"
+                                                            class="d-block mb-2 rounded-pill profile-picture-preview object-fit-cover">
+                                                    @else
+                                                        <img src="{{ asset('storage/' . $user->avatar) }}" alt="Profile Picture" width="70" height="70"
+                                                            class="d-block mb-2 rounded-pill profile-picture-preview object-fit-cover">
+                                                    @endif
                                                 </div>
                                                 <br>
                                                 <div class="col-1 text-center">
