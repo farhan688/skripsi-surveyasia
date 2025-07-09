@@ -1,7 +1,7 @@
 @extends('layouts.footer')
 @extends('layouts.base')
 @extends('survey.layouts.header')
-@extends('respondent.layouts.navbar')
+@extends('respondent.layouts.navbar2')
 
 @section('content')
 

@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="min-vh-100">
-    @include('respondent.layouts.navbar')
+    @include('respondent.layouts.navbar2')
 
     <!-- Hero Section -->
     <div class="bg-gradient-to-r from-orange to-danger py-5" style="background: linear-gradient(to right, #f97316, #ef4444);">

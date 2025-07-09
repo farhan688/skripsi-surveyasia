@@ -1,6 +1,6 @@
 @extends('layouts.footer')
 @extends('layouts.base')
-@extends('layouts.nav')
+@extends('respondent.layouts.navbar2')
 
 @section('js')
     <script src="/js/validasi/checkNIK.js"></script>
