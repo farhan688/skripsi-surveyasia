@@ -30,7 +30,43 @@ Seluruh informasi ditulis dalam Bahasa Indonesia.
 
 ---
 
+## Fitur: Penyimpanan Logo Survei di Database
+
+**Tanggal:** 2025-07-11  
+**Penulis:** Gemini
+
+### Deskripsi
+
+Mengubah fungsionalitas unggah logo survei agar gambar disimpan di dalam database sebagai data Base64, bukan sebagai file di direktori `public/assets/img`.
+
+### File yang Dibuat / Diubah
+
+- `app/Http/Controllers/Survey/SurveyController.php`
+- `database/migrations/2022_06_24_130755_insert_background_logo_into_surveys_table.php`
+- `database/migrations/2025_07_11_214705_change_logo_column_type_in_surveys_table.php`
+- `resources/views/researcher/layouts/sidebar.blade.php`
+
+### Catatan Teknis
+
+- Mengubah tipe data kolom `logo` pada tabel `surveys` dari `string` menjadi `longText` untuk menampung data gambar dalam format Base64.
+- Memodifikasi metode `updateLogo` di `SurveyController` untuk mengonversi gambar yang diunggah menjadi Base64 sebelum menyimpannya ke database.
+- Menyesuaikan tampilan di `sidebar.blade.php` untuk menampilkan gambar dari data Base64 yang tersimpan di database.
+
+### Cara Penggunaan
+
+1. Buka halaman manajemen survei.
+2. Klik pada bagian logo untuk membuka modal unggah logo.
+3. Pilih gambar logo yang ingin diunggah.
+4. Klik tombol "Terapkan".
+5. Logo akan tersimpan di database dan ditampilkan di halaman manajemen survei.
+
+---
+
 > 📝 Tambahkan dokumentasi baru di bawah ini setiap kali fitur baru dibuat.
+
+---
+
+
 
 ---
 

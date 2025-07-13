@@ -133,9 +133,9 @@
                     </div>
 
                     <div class="tab-pane fade" id="change" role="tabpanel" aria-labelledby="change-tab">
-                        <h4 class="fw-bold">Tukar Poin</h4>
+                        <h4 class="fw-bold">Tukar Saldo</h4>
                         <h6 class="text-muted">Catatan:</h6>
-                        <p class="text-muted fs-14px">Pilihlah dan tukarkan poin Anda dengan hadiah, silakan pilih dari
+                        <p class="text-muted fs-14px">Pilihlah dan tukarkan saldo Anda dengan hadiah, silakan pilih dari
                             item
                             di bawah
                             ini dengan memperhatikan persyaratan.</p>

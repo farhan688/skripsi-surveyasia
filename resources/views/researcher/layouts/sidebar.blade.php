@@ -87,7 +87,7 @@
                                     @if ($survey->logo == null)
                                     <img src="/assets/img/style_logo.png" alt="Logo">
                                     @else
-                                    <img src="{{ asset('storage/' . $survey->logo) }}" class="img-fluid" alt="">
+                                    <img src="data:image/png;base64,{{ $survey->logo }}" class="img-fluid" alt="">
                                     @endif
                                 </label>
                             </div>

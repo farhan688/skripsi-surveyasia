@@ -117,21 +117,15 @@ class SurveyController extends Controller
     // Update survey Logo
     public function updateLogo(Request $request, $id)
     {
-        Survey::find($id)->update([
-            'logo' => $request->logo
-        ]);
-
-        $data = Survey::findOrFail($id);
+        $survey = Survey::findOrFail($id);
 
         if ($request->file('logo')) {
-            if ($data->logo && file_exists(storage_path('app/public') . $data->logo)) {
-                Storage::delete('public/' . $data->logo);
-            }
-            $file = $request->file('logo')->store('logo_survey', 'public');
-            $data->logo = $file;
+            $logo = $request->file('logo');
+            $logoBase64 = base64_encode(file_get_contents($logo->getRealPath()));
+            $survey->logo = $logoBase64;
+            $survey->save();
         }
 
-        $data->save($request->all());
         return redirect()->back();
     }
 
