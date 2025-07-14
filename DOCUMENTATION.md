@@ -62,7 +62,38 @@ Mengubah fungsionalitas unggah logo survei agar gambar disimpan di dalam databas
 
 ---
 
+## Fitur: Paginasi pada Daftar Survei Peneliti
+
+**Tanggal:** 2025-07-11  
+**Penulis:** Gemini
+
+### Deskripsi
+
+Menerapkan paginasi pada halaman daftar survei peneliti (`/researcher/surveys`) untuk membatasi jumlah survei yang ditampilkan per halaman menjadi 10, dan menambahkan navigasi halaman untuk melihat survei selanjutnya.
+
+### File yang Dibuat / Diubah
+
+- `app/Http/Controllers/Survey/SurveyController.php`
+- `resources/views/researcher/dashboard.blade.php`
+
+### Catatan Teknis
+
+- Mengubah metode `showUserSurvey` di `SurveyController` untuk menggunakan `paginate(10)` dari Laravel, bukan `get()`, untuk mengambil data survei.
+- Menambahkan komponen `{{ $surveys->links() }}` di `dashboard.blade.php` untuk menampilkan tautan paginasi.
+
+### Cara Penggunaan
+
+1. Buka halaman dasbor peneliti (`/researcher/surveys`).
+2. Jika terdapat lebih dari 10 survei, akan muncul navigasi halaman di bagian bawah daftar survei.
+3. Gunakan navigasi halaman untuk berpindah antar halaman dan melihat survei lainnya.
+
+---
+
 > 📝 Tambahkan dokumentasi baru di bawah ini setiap kali fitur baru dibuat.
+
+---
+
+
 
 ---
 

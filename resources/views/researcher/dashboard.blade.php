@@ -146,6 +146,9 @@
         </div>
     </div>
     @endforeach
+    <div class="d-flex justify-content-center mt-4">
+        {{ $surveys->links() }}
+    </div>
     @endif
 
     <script src="{{ asset('js/researcher/popup-pricing.js') }}"></script>
