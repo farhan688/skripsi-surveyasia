@@ -60,14 +60,6 @@ class SurveyHistoryController extends Controller
         $user->reward_balance += $jumlahTukar; // contoh: 1 point = Rp100
         $user->save();
 
-        // // Simpan riwayat penukaran (opsional)
-        // DB::table('point_exchanges')->insert([
-        //     'user_id' => $user->id,
-        //     'points_exchanged' => $jumlahTukar,
-        //     'reward_amount' => $jumlahTukar * 100,
-        //     'created_at' => now(),
-        // ]);
-
         return back()->with('success', 'Penukaran berhasil!');
     }
 }

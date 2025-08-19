@@ -106,11 +106,7 @@ class SurveyController extends Controller
             ->with('success', 'Terima kasih! Anda mendapatkan 200 poin.');;
     }
 
-    /**
-     * Get questions list of survey
-     * @param int $id - Survey ID
-     * @return
-     */
+
     public function questions(Survey $survey)
     {
         session_start();
