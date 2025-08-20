@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     zip \
     curl \
+    wkhtmltopdf \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install pdo_mysql zip exif pcntl gd
 
@@ -64,6 +65,9 @@ RUN docker-php-ext-install pdo_mysql zip exif pcntl gd
 COPY --from=vendor /var/www/html/vendor/ ./vendor/
 COPY --from=frontend /app/public/ ./public/
 COPY . .
+
+# Copy .env.example to .env
+RUN cp .env.example .env
 
 # Set permission
 RUN chown -R www-data:www-data /var/www/html \
