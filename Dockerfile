@@ -19,6 +19,6 @@ WORKDIR /var/www
 COPY . .
 
 RUN composer install --no-dev --optimize-autoloader
-RUN npm install && npm run build
+RUN npm install && npm run prod
 
 CMD php artisan serve --host=0.0.0.0 --port=${PORT:-3000}
