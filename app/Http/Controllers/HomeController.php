@@ -24,7 +24,7 @@ class HomeController extends Controller
     public function index()
     {
         $subcriptions = Subscription::get();
-        $categorySubscription = CategorySubcriptions::get();
+        $categorySubscription = CategorySubcriptions::get()->keyBy('id');
 
         if (Auth::check()) {
             $userSubscription = UsersSubscriptions::where('user_id', Auth::user()->id)->value('category_id');
