@@ -23,21 +23,27 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $subcriptions = Subscription::get();
-        $categorySubscription = CategorySubcriptions::get()->keyBy('id');
+        $payPerSurvey = CategorySubcriptions::where('subscription_id', Subscription::PAY_PER_SURVEY)->get();
+        $personal = CategorySubcriptions::where('subscription_id', Subscription::PERSONAL)->where('title', 'not like', '%Yearly%')->get();
+        $personalYearly = CategorySubcriptions::where('subscription_id', Subscription::PERSONAL)->where('title', 'like', '%Yearly%')->get();
+        $business = CategorySubcriptions::where('subscription_id', Subscription::BUSINESS)->get();
 
         if (Auth::check()) {
             $userSubscription = UsersSubscriptions::where('user_id', Auth::user()->id)->value('category_id');
 
             $data = [
-                'subcriptions' => $subcriptions,
-                'categorySubscription' => $categorySubscription,
+                'payPerSurvey' => $payPerSurvey,
+                'personal' => $personal,
+                'personalYearly' => $personalYearly,
+                'business' => $business,
                 'userSubscription' => $userSubscription,
             ];
         } else {
             $data = [
-                'subcriptions' => $subcriptions,
-                'categorySubscription' => $categorySubscription,
+                'payPerSurvey' => $payPerSurvey,
+                'personal' => $personal,
+                'personalYearly' => $personalYearly,
+                'business' => $business,
             ];
         }
 

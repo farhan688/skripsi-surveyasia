@@ -123,54 +123,41 @@ $respondent = 'respondent';
                 <div class="tab-pane fade" id="pay-per-survey" role="tabpanel" aria-labelledby="pay-per-survey-tab">
                     <div class="container">
                         <div class="row justify-content-center pay-per-survey-price" id="pay-per-survey-price">
+                            @foreach($payPerSurvey as $subscription)
                             <div class="col-md-4 mt-md-0 mt-3">
                                 <div class="border radius-default p-3">
-                                    <h5 class=" fw-bold">{{ $categorySubscription[1]->title }}</h5>
-                                    <p class="fs-14px">{{ $categorySubscription[1]->description }}</p>
-                                    <h4 class="fw-bold">Start from Rp{{ number_format($categorySubscription[1]->price,
-                                        0, 0, '.') }}</h4>
+                                    <h5 class=" fw-bold">{{ $subscription->title }}</h5>
+                                    <p class="fs-14px">{{ $subscription->description }}</p>
+                                    @if($subscription->price > 0)
+                                    <h4 class="fw-bold">Start from Rp{{ number_format($subscription->price, 0, 0, '.') }}</h4>
+                                    @else
+                                    <h4 class="fw-bold">Contact us for custom pricing</h4>
+                                    @endif
                                     <p class="text-secondary fs-14px">Per bulan</p>
                                     <a class="btn btn-outline-dark radius-default w-100 fw-semibold mb-3"
-                                        href="{{ route('researcher.payment.show', $categorySubscription[1]) }}"
+                                        href="{{ route('researcher.payment.show', $subscription) }}"
                                         role="button">Choose this plan</a>
                                     <div class="text-secondary">
                                         <p>&#10004; Custom sesuai kebutuhan Anda</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 mt-md-0 mt-3">
-                                <div class="border radius-default p-3">
-                                    <h5 class=" fw-bold">{{ $categorySubscription[2]->title }}</h5>
-                                    <p class="fs-14px">{{ $categorySubscription[2]->description }}</p>
-                                    <h4 class="fw-bold">Contact us for custom pricing</h4>
-                                    <p class="text-secondary fs-14px">Per bulan</p>
-                                    <a class="btn btn-outline-dark radius-default w-100 fw-semibold mb-3"
-                                        href="{{ route('contact.index') }}" role="button">Choose this plan</a>
-                                    <div class="text-secondary">
-                                        <p>&#10004; Kolaborasi Tim</p>
-                                        <p>&#10004; Custom</p>
-                                        <p>&#10004; Dukungan telepon</p>
-                                        <p>&#10004; Tren data</p>
-                                        <p>&#10004; Lihat alamat IP responden</p>
-                                        <p>&#10004; Email Konfirmasi kepada Responden</p>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
                     <div class="container">
                         <div class="row justify-content-center personal-price" id="personal-price">
+                            @foreach($personal as $subscription)
                             <div class="col-md-4 mt-md-0 mt-3">
                                 <div class="border radius-default p-3">
-                                    <h5 class=" fw-bold">{{ $categorySubscription[3]->title }}</h5>
-                                    <p class="fs-14px">{{ $categorySubscription[3]->description }}</p>
-                                    <h4 class="fw-bold">Rp{{ number_format($categorySubscription[3]->price,
-                                        0, 0, '.') }}</h4>
+                                    <h5 class=" fw-bold">{{ $subscription->title }}</h5>
+                                    <p class="fs-14px">{{ $subscription->description }}</p>
+                                    <h4 class="fw-bold">Rp{{ number_format($subscription->price, 0, 0, '.') }}</h4>
                                     <p class="text-secondary fs-14px">Per bulan</p>
                                     <a class="btn btn-outline-dark radius-default w-100 fw-semibold mb-3"
-                                        href="{{ route('researcher.payment.show', $categorySubscription[1]) }}"
+                                        href="{{ route('researcher.payment.show', $subscription) }}"
                                         role="button">Choose this plan</a>
                                     <div class="text-secondary">
                                         <p>&#10004; Jumlah survei unlimited</p>
@@ -182,61 +169,26 @@ $respondent = 'respondent';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 mt-md-0 mt-3">
-                                <div class="border radius-default p-3">
-                                    <h5 class=" fw-bold">{{ $categorySubscription[4]->title }}</h5>
-                                    <p class="fs-14px">{{ $categorySubscription[4]->description }}</p>
-                                    <h4 class="fw-bold">Rp{{ number_format($categorySubscription[4]->price,
-                                        0, 0, '.') }}</h4>
-                                    <p class="text-secondary fs-14px">Per bulan</p>
-                                    <a class="btn btn-outline-dark radius-default w-100 fw-semibold mb-3"
-                                        href="{{ route('researcher.payment.show', $categorySubscription[4]) }}"
-                                        role="button">Choose this plan</a>
-                                    <div class="text-secondary">
-                                        <p>&#10004; Jumlah survei unlimited</p>
-                                        <p>&#10004; Pertanyaan unlimited</p>
-                                        <p>&#10004; 2.500 Responden</p>
-                                        <p>&#10004; Fitur kolaborasi</p>
-                                        <p>&#10004; Pengatur waktu tidak aktif</p>
-                                        <p>&#10004; Terima pembayaran</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mt-md-0 mt-3">
-                                <div class="border radius-default p-3">
-                                    <h5 class=" fw-bold">{{ $categorySubscription[5]->title }}</h5>
-                                    <p class="fs-14px">{{ $categorySubscription[5]->description }}</p>
-                                    <h4 class="fw-bold">Rp{{ number_format($categorySubscription[5]->price,
-                                        0, 0, '.') }}</h4>
-                                    <p class="text-secondary fs-14px">Per bulan</p>
-                                    <a class="btn btn-outline-dark radius-default w-100 fw-semibold mb-3"
-                                        href="{{ route('researcher.payment.show', $categorySubscription[5]) }}"
-                                        role="button">Choose this plan</a>
-                                    <div class="text-secondary">
-                                        <p>&#10004; Jumlah survei unlimited</p>
-                                        <p>&#10004; Pertanyaan unlimited</p>
-                                        <p>&#10004; 5.000 Responden</p>
-                                        <p>&#10004; Fitur kolaborasi</p>
-                                        <p>&#10004; Pengatur waktu tidak aktif</p>
-                                        <p>&#10004; Terima pembayaran</p>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
                     <div class="container">
                         <div class="row justify-content-center business-price" id="business-price">
+                            @foreach($business as $subscription)
                             <div class="col-md-4 mt-md-0 mt-3">
                                 <div class="border radius-default p-3">
-                                    <h5 class=" fw-bold">{{ $categorySubscription[8]->title }}</h5>
-                                    <p class="fs-14px">{{ $categorySubscription[8]->description }}</p>
-                                    <h4 class="fw-bold">Rp{{ number_format($categorySubscription[8]->price,
-                                        0, 0, '.') }}</h4>
+                                    <h5 class=" fw-bold">{{ $subscription->title }}</h5>
+                                    <p class="fs-14px">{{ $subscription->description }}</p>
+                                    @if($subscription->price > 0)
+                                    <h4 class="fw-bold">Rp{{ number_format($subscription->price, 0, 0, '.') }}</h4>
+                                    @else
+                                    <h4 class="fw-bold">Contact Us</h4>
+                                    @endif
                                     <p class="text-secondary fs-14px">Per bulan</p>
                                     <a class="btn btn-outline-dark radius-default w-100 fw-semibold mb-3"
-                                        href="{{ route('researcher.payment.show', $categorySubscription[8]) }}"
+                                        href="{{ route('researcher.payment.show', $subscription) }}"
                                         role="button">Choose this plan</a>
                                     <div class="text-secondary">
                                         <p>&#10004; Kolaborasi tim</p>
@@ -248,44 +200,7 @@ $respondent = 'respondent';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 mt-md-0 mt-3">
-                                <div class="border radius-default p-3">
-                                    <h5 class=" fw-bold">{{ $categorySubscription[9]->title }}</h5>
-                                    <p class="fs-14px">{{ $categorySubscription[9]->description }}</p>
-                                    <h4 class="fw-bold">Rp{{ number_format($categorySubscription[9]->price,
-                                        0, 0, '.') }}</h4>
-                                    <p class="text-secondary fs-14px">Per bulan</p>
-                                    <a class="btn btn-outline-dark radius-default w-100 fw-semibold mb-3"
-                                        href="{{ route('researcher.payment.show', $categorySubscription[9]) }}"
-                                        role="button">Choose this plan</a>
-                                    <div class="text-secondary">
-                                        <p>&#10004; Kolaborasi tim</p>
-                                        <p>&#10004; 30.000 Responden</p>
-                                        <p>&#10004; Email yang diprioritaskan</p>
-                                        <p>&#10004; Halaman acak</p>
-                                        <p>&#10004; Kuota tanggapan</p>
-                                        <p>&#10004; Visualisasi data peta</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mt-md-0 mt-3">
-                                <div class="border radius-default p-3">
-                                    <h5 class=" fw-bold">{{ $categorySubscription[10]->title }}</h5>
-                                    <p class="fs-14px">{{ $categorySubscription[10]->description }}</p>
-                                    <h4 class="fw-bold">Contact Us</h4>
-                                    <p class="text-secondary fs-14px">Per bulan</p>
-                                    <a class="btn btn-outline-dark radius-default w-100 fw-semibold mb-3"
-                                        href="{{ route('contact.index') }}" role="button">Choose this plan</a>
-                                    <div class="text-secondary">
-                                        <p>&#10004; Kolaborasi tim</p>
-                                        <p>&#10004; Custom</p>
-                                        <p>&#10004; Dukungan telepon</p>
-                                        <p>&#10004; Tren data</p>
-                                        <p>&#10004; Lihat alamat IP responden</p>
-                                        <p>&#10004; Email konfirmasi kepada Responden</p>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -307,15 +222,15 @@ $respondent = 'respondent';
                     aria-labelledby="personal-yearly-tab">
                     <div class="container">
                         <div class="row justify-content-center personal-yearly-price" id="personal-yearly-price">
+                            @foreach($personalYearly as $subscription)
                             <div class="col-md-4 mt-md-0 mt-3">
                                 <div class="border radius-default p-3">
-                                    <h5 class=" fw-bold">{{ $categorySubscription[6]->title }}</h5>
-                                    <p class="fs-14px">{{ $categorySubscription[6]->description }}</p>
-                                    <h4 class="fw-bold">Rp{{ number_format($categorySubscription[6]->price,
-                                        0, 0, '.') }}</h4>
+                                    <h5 class=" fw-bold">{{ $subscription->title }}</h5>
+                                    <p class="fs-14px">{{ $subscription->description }}</p>
+                                    <h4 class="fw-bold">Rp{{ number_format($subscription->price, 0, 0, '.') }}</h4>
                                     <p class="text-secondary fs-14px">Per tahun</p>
                                     <a class="btn btn-outline-dark radius-default w-100 fw-semibold mb-3"
-                                        href="{{ route('researcher.payment.show', $categorySubscription[6]) }}"
+                                        href="{{ route('researcher.payment.show', $subscription) }}"
                                         role="button">Choose this plan</a>
                                     <div class="text-secondary">
                                         <p>&#10004; Jumlah survei unlimited</p>
@@ -327,26 +242,7 @@ $respondent = 'respondent';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 mt-md-0 mt-3">
-                                <div class="border radius-default p-3">
-                                    <h5 class=" fw-bold">{{ $categorySubscription[7]->title }}</h5>
-                                    <p class="fs-14px">{{ $categorySubscription[7]->description }}</p>
-                                    <h4 class="fw-bold">Rp{{ number_format($categorySubscription[7]->price,
-                                        0, 0, '.') }}</h4>
-                                    <p class="text-secondary fs-14px">Per tahun</p>
-                                    <a class="btn btn-outline-dark radius-default w-100 fw-semibold mb-3"
-                                        href="{{ route('researcher.payment.show', $categorySubscription[7]) }}"
-                                        role="button">Choose this plan</a>
-                                    <div class="text-secondary">
-                                        <p>&#10004; Jumlah survei unlimited</p>
-                                        <p>&#10004; Pertanyaan unlimited</p>
-                                        <p>&#10004; 5.000 Responden</p>
-                                        <p>&#10004; Fitur kolaborasi</p>
-                                        <p>&#10004; Pengatur waktu tidak aktif</p>
-                                        <p>&#10004; Terima pembayaran</p>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
